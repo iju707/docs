@@ -5,7 +5,7 @@ footer:
 ---
 
 - Docker
-  - [docker-compose](/compose/)
+  - [docker-compose](/docker/compose/)
 - Flutter
   - [시작하기](/flutter/get-started/install/)
 - Java

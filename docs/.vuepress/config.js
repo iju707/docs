@@ -4,14 +4,15 @@ const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
 const { searchPlugin } = require('@vuepress/plugin-search')
 const snippetorsTabs = require('@snippetors/vuepress-plugin-tabs')
 const snippetorsCodeCopy = require('@snippetors/vuepress-plugin-code-copy')
+const siteMapPlugin = require('vuepress-plugin-sitemap')
 
 module.exports = {
     lang: 'ko-KR',
     title: '문서 번역 모음',
     description: '문서 번역 모음입니다',
-    base: '/docs/',
-    head: [ 
-        ['link', { rel: "icon", type: "image/png", href: "/icon.png"}],
+    base: '/',
+    head: [
+        ['link', { rel: "icon", type: "image/png", href: "/icon.png" }],
     ],
     theme: localTheme({
         logo: '/icon.png',
@@ -21,7 +22,7 @@ module.exports = {
             {
                 text: 'Java',
                 children: [
-                    { text: '자바 메모리관리', link: '/java/article/java-memory-management.md'}
+                    { text: '자바 메모리관리', link: '/java/article/java-memory-management.md' }
                 ]
             },
             {
@@ -43,34 +44,90 @@ module.exports = {
                 ]
             },
             {
-                text:'Flutter',
+                text: 'Flutter',
                 children: [
                     {
                         text: '시작하기',
-                        link: '/flutter/get-started/'
+                        link: '/flutter/get-started/install/'
                     }
                 ]
             }
         ],
-        sidebar: { 
-            '/spring/core/ioc/' : [
-                '/spring/core/ioc/1_1.md',
-                '/spring/core/ioc/1_2.md',
-                '/spring/core/ioc/1_3.md',
-                '/spring/core/ioc/1_4.md',
-                '/spring/core/ioc/1_5.md',
-                '/spring/core/ioc/1_6.md',
-                '/spring/core/ioc/1_7.md',
-                '/spring/core/ioc/1_8.md',
-                '/spring/core/ioc/1_9.md',
-                '/spring/core/ioc/1_10.md',
-                '/spring/core/ioc/1_11.md',
-                '/spring/core/ioc/1_12.md',
-                '/spring/core/ioc/1_13.md',
-                '/spring/core/ioc/1_14.md',
-                '/spring/core/ioc/1_15.md',
-                '/spring/core/ioc/1_16.md'
-            ]
+        sidebar: {
+            '/spring/core/ioc/': [
+                '1_1.md',
+                '1_2.md',
+                '1_3.md',
+                '1_4.md',
+                '1_5.md',
+                '1_6.md',
+                '1_7.md',
+                '1_8.md',
+                '1_9.md',
+                '1_10.md',
+                '1_11.md',
+                '1_12.md',
+                '1_13.md',
+                '1_14.md',
+                '1_15.md',
+                '1_16.md'
+            ],
+            "/docker/compose/": [
+                "/docker/compose/",
+                {
+                    text: "Compose V2",
+                    collapsible: true,
+                    children: [
+                        "/docker/compose/cli-command.md",
+                        "/docker/compose/cli-command-compatibility.md"
+                    ]
+                },
+                "/docker/compose/install.md",
+                "/docker/compose/gettingstarted.md",
+                "/docker/compose/environment-variables.md",
+                "/docker/compose/env-file.md",
+                "/docker/compose/profiles.md",
+                "/docker/compose/gpu-support.md",
+                "/docker/compose/extends.md",
+                "/docker/compose/networking.md",
+                "/docker/compose/production.md",
+                "/docker/compose/startup-order.md",
+            ],
+            "/flutter/get-started/": [
+                {
+                    text: "1. 설치하기",
+                    link: "/flutter/get-started/install/",
+                    collapsible: true,
+                    children: [
+                        "/flutter/get-started/install/windows.md",
+                        "/flutter/get-started/install/macos.md",
+                        "/flutter/get-started/install/linux.md",
+                        "/flutter/get-started/install/chromeos.md"
+                    ]
+                },
+                {
+                    text: "2. 에디터 구성하기",
+                    link: "/flutter/get-started/editor/",
+                    collapsible: true,
+                    children: [
+                        "/flutter/get-started/editor/androidstudio.md",
+                        "/flutter/get-started/editor/visualstudiocode.md",
+                        "/flutter/get-started/editor/emacs.md"
+                    ]
+                },
+                {
+                    text: "3. 체험해보기",
+                    link: "/flutter/get-started/test-drive/",
+                    collapsible: true,
+                    children: [
+                        "/flutter/get-started/test-drive/androidstudio.md",
+                        "/flutter/get-started/test-drive/visualstudiocode.md",
+                        "/flutter/get-started/test-drive/terminal.md",
+                    ]
+                }, 
+                "/flutter/get-started/codelab.md",
+                "/flutter/get-started/learn-more.md",
+            ],
         }
     }),
     plugins: [
@@ -80,5 +137,6 @@ module.exports = {
         searchPlugin({}),
         snippetorsTabs({ events: ['snippetors-vuepress-plugin-code-copy-update-event'] }),
         snippetorsCodeCopy({}),
+        siteMapPlugin({ hostname: 'https://docs.oofbird.me', exclude: ['/404.html'] }),
     ]
 }
