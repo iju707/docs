@@ -1,10 +1,10 @@
-const { localTheme } = require('./theme')
-
-const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics')
-const { searchPlugin } = require('@vuepress/plugin-search')
-const snippetorsTabs = require('@snippetors/vuepress-plugin-tabs')
-const snippetorsCodeCopy = require('@snippetors/vuepress-plugin-code-copy')
-const siteMapPlugin = require('vuepress-plugin-sitemap')
+const { localTheme } = require('./theme');
+const { googleAnalyticsPlugin } = require('@vuepress/plugin-google-analytics');
+const { searchPlugin } = require('@vuepress/plugin-search');
+const { commentPlugin } = require('vuepress-plugin-comment2');
+const { sitemapPlugin } = require('vuepress-plugin-sitemap2');
+const { mdEnhancePlugin } = require("vuepress-plugin-md-enhance");
+const { seoPlugin } = require("vuepress-plugin-seo2");
 
 module.exports = {
     lang: 'ko-KR',
@@ -135,8 +135,22 @@ module.exports = {
             id: 'UA-41121759-18'
         }),
         searchPlugin({}),
-        snippetorsTabs({ events: ['snippetors-vuepress-plugin-code-copy-update-event'] }),
-        snippetorsCodeCopy({}),
-        siteMapPlugin({ hostname: 'https://docs.oofbird.me', exclude: ['/404.html'] }),
+        commentPlugin({
+            provider: "Giscus",
+            repo: "iju707/docs",
+            repoId: "R_kgDOHrj9wQ",
+            category: "General",
+            categoryId: "DIC_kwDOHrj9wc4CQb4g",
+        }),
+        sitemapPlugin({
+            hostname: "https://docs.oofbird.me"
+        }),
+        mdEnhancePlugin({
+            enableAll: true,
+        }),
+        seoPlugin({
+            hostname: "https://docs.oofbird.me",
+            author: "Jinuk Im",
+        })
     ]
-}
+};

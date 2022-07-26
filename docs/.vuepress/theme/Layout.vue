@@ -6,6 +6,7 @@ import AdsenseB from './AdsenseB.vue'
 <template>
   <ParentLayout>
     <template #page-bottom>
+      <CommentService />
       <AdsenseB />
     </template>
   </ParentLayout>

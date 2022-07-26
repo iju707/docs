@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: 
+heroImage: icon.png
 footer:
 ---
 
