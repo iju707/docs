@@ -1,22 +1,20 @@
 {
-  "name": "docs",
+  "name": "oofbird-docs",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A project of vuepress-theme-hope",
   "repository": "https://github.com/iju707/docs.git",
   "author": "iju707 <iju707@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs"
+  },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^2.0.0-beta.49",
-    "@vuepress/plugin-search": "^2.0.0-beta.49",
+    "@vuepress/client": "^2.0.0-beta.49",
+    "vue": "^3.2.36",
     "vuepress": "^2.0.0-beta.49",
-    "vuepress-plugin-comment2": "^2.0.0-beta.87",
-    "vuepress-plugin-copy-code2": "^2.0.0-beta.87",
-    "vuepress-plugin-md-enhance": "^2.0.0-beta.87",
-    "vuepress-plugin-seo2": "^2.0.0-beta.87",
-    "vuepress-plugin-sitemap2": "^2.0.0-beta.87"
-  },
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "vuepress-theme-hope": "^2.0.0-beta.87"
   }
 }

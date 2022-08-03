@@ -51,6 +51,15 @@ module.exports = {
                         link: '/flutter/get-started/install/'
                     }
                 ]
+            },
+            {
+                text: 'AWS',
+                children: [
+                    {
+                        text: 'Boto3',
+                        link: '/aws/boto3/'
+                    }
+                ]
             }
         ],
         sidebar: {
@@ -151,6 +160,6 @@ module.exports = {
         seoPlugin({
             hostname: "https://docs.oofbird.me",
             author: "Jinuk Im",
-        })
+        }),
     ]
 };
