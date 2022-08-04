@@ -9,7 +9,7 @@ features:
 
   - title: Flutter
     details: Flutter 공식문서 번역
-    link: /flutter/
+    link: /flutter/get-started/install/
 
   - title: Spring Core
     details: Spring Framework Core 공식문서 번역
