@@ -1,3 +1,26 @@
 :root {
     --content-width: 80% !important;
 }
+
+.sidebar-group .sidebar-link {
+    padding-left: 1.75rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.footer-wrapper .footer {
+    width: 100%;
+}
+
+.ad-outer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ad-inner {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
 import googleAnalyticsPlugin from '@vuepress/plugin-google-analytics';
+import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   lang: "en-US",
@@ -9,11 +10,16 @@ export default defineUserConfig({
 
   base: "/",
 
+  head: [
+    ['link', { rel: "icon", type: "image/png", href: "/logo.png" }],
+  ],
+
   theme,
 
   plugins: [
     googleAnalyticsPlugin({
-        id: 'UA-41121759-18'
+      id: 'UA-41121759-18'
     }),
+    searchPlugin({})
   ]
 });

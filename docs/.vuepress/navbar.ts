@@ -14,11 +14,40 @@ export default navbar([
   {
     text: "Spring Core",
     prefix: "/spring/core/",
-    link: "/spring/core/",
     children: [
       {
-        text: "IoC",
+        text: "Inversion of Control",
         link: "ioc/"
+      }
+    ]
+  },
+  {
+    text: "Docker",
+    prefix: "/docker/",
+    children: [
+      {
+        text: "Docker Compose",
+        link: "compose/",
+      }
+    ]
+  },
+  {
+    text: "Flutter",
+    prefix: "/flutter/",
+    children: [
+      {
+        text: "시작하기",
+        link: "get-started/install/",
+      }
+    ]
+  },
+  {
+    text: "Python",
+    prefix: "/python/",
+    children: [
+      {
+        text: "Boto3 Library",
+        link: "boto3/"
       }
     ]
   }
