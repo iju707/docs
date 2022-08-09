@@ -2,8 +2,14 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   {
+    text: "Blog",
+    link: "https://www.oofbird.me",
+    icon: "blog"
+  },
+  {
     text: "Java",
     prefix: "/java/",
+    icon: "java",
     children: [
       {
         text: "JVM에서 메모리 관리",
@@ -12,18 +18,26 @@ export default navbar([
     ],
   },
   {
-    text: "Spring Core",
-    prefix: "/spring/core/",
+    text: "Spring",
+    prefix: "/spring/",
+    icon: "back-stage",
     children: [
       {
-        text: "Inversion of Control",
-        link: "ioc/"
+        text: "Spring Core",
+        prefix: "core/",
+        children: [
+          {
+            text: "Inversion of Control",
+            link: "ioc/"
+          }
+        ]
       }
     ]
   },
   {
     text: "Docker",
     prefix: "/docker/",
+    icon: "stack",
     children: [
       {
         text: "Docker Compose",
@@ -34,6 +48,7 @@ export default navbar([
   {
     text: "Flutter",
     prefix: "/flutter/",
+    icon: "mobile",
     children: [
       {
         text: "시작하기",
@@ -44,6 +59,7 @@ export default navbar([
   {
     text: "Python",
     prefix: "/python/",
+    icon: "python",
     children: [
       {
         text: "Boto3 Library",

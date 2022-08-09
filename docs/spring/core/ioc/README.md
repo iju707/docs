@@ -2,6 +2,8 @@
 description: 스프링의 제어의 역전(Inversion of Control, IOC) 컨테이너
 keywords: documentation, docs, spring, ioc
 title: IoC 컨테이너
+tag:
+ - Spring
 ---
 
 1장 스프링 프레임워크의 IoC (제어의 역전, Inversion of Control) 컨테이너 관련 내용입니다.
