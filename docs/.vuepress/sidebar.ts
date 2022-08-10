@@ -119,5 +119,25 @@ export default sidebar({
         }
       ]
     }
+  ],
+  "/elastic/ml/": [
+    {
+      text: "엘라스틱 머신러닝",
+      prefix: "/elastic/ml/",
+      children: [
+        { text: "설정하기", link: "setup"},
+        {
+          text: "시작해보기",
+          link: "getting-started",
+          children: [
+            { text: "키바나에서 데이터 조회하기", link: "gs-visualizer" },
+            { text: "이상탐지 잡 만들기", link: "gs-jobs" },
+            { text: "이상탐지 결과보기", link: "gs-results" },
+            { text: "예측 생성하기", link: "gs-forecasts" },
+            { text: "다음단계", link: "gs-next" }
+          ]
+        }
+      ]
+    }
   ]
 });

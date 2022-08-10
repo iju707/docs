@@ -66,5 +66,16 @@ export default navbar([
         link: "boto3/"
       }
     ]
+  },
+  {
+    text: "Elastic",
+    prefix: "/elastic/",
+    icon: "search",
+    children: [
+      {
+        text: "머신러닝",
+        link: "ml/setup"
+      }
+    ]
   }
 ]);
