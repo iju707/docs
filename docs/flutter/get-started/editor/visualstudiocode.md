@@ -1,8 +1,13 @@
 ---
-title: Visual Studio Code
+title: Visual Studio Code에 Flutter 구성하기
 prev: /flutter/get-started/install/
 next: /flutter/get-started/test-drive/
+tag:
+    - Flutter
+    - 3.0.5
 ---
+
+원문 : [https://docs.flutter.dev/get-started/editor?tab=vscode](https://docs.flutter.dev/get-started/editor?tab=vscode)
 
 ## VS Code 설치
 

@@ -1,8 +1,13 @@
 ---
-title: Android Studio(IntelliJ)
+title: Android Studio(IntelliJ)에 Flutter 구성하기
 prev: /flutter/get-started/install/
 next: /flutter/get-started/test-drive/
+tag:
+    - Flutter
+    - 3.0.5
 ---
+
+원문 : [https://docs.flutter.dev/get-started/editor?tab=androidstudio](https://docs.flutter.dev/get-started/editor?tab=androidstudio)
 
 ## Android Studio 설치
 

@@ -1,7 +1,10 @@
 ---
-title: 2. 에디터 구성하기
+title: Flutter 개발을 위한 에디터 구성하기
 prev: /flutter/get-started/install/
 next: /flutter/get-started/test-drive/
+tag:
+    - Flutter
+    - 3.0.5
 ---
 
 명령줄 도구를 조합하여 어떤 텍스트 에디터를 사용하던 Flutter를 활용한 앱을 빌드할 수 있습니다.

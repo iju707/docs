@@ -1,8 +1,13 @@
 ---
-title: Emacs
+title: Emacs에 Flutter 구성하기
 prev: /flutter/get-started/install/
 next: /flutter/get-started/test-drive/
+tag:
+    - Flutter
+    - 3.0.5
 ---
+
+원문 : [https://docs.flutter.dev/get-started/editor?tab=emacs](https://docs.flutter.dev/get-started/editor?tab=emacs)
 
 ## Emacs 설치
 

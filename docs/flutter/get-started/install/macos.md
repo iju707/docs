@@ -1,8 +1,13 @@
 ---
-title: MacOS
+title: MacOS에 Flutter 설치하기
 prev: false
 next: /flutter/get-started/editor/
+tag:
+    - Flutter
+    - 3.0.5
 ---
+
+원문 : [https://docs.flutter.dev/get-started/install/macos](https://docs.flutter.dev/get-started/install/macos)
 
 ## 시스템 요구사항
 
@@ -14,21 +19,32 @@ Flutter를 설치하고 실행하기 위해 아래의 최소 요구사항을 가
   또는 별도로 [git 설치](https://git-scm.com/download/mac)를 진행해도 됩니다.
 
 ::: warning 중요
-최신 [Apple M1 프로세서](https://www.apple.com/mac/m1)에 설치할 경우, 새로운 Apple Silicon 아키텍쳐 지원이 완료됨에 따라 [지원노트](https://github.com/flutter/flutter/wiki/Developing-with-Flutter-on-Apple-Silicon)를 참고하시는게 좋습니다.
+[애플 실리콘 맥](https://support.apple.com/en-us/HT211814)에 설치할 경우, [일부 보조도구](https://github.com/flutter/website/pull/7119#issuecomment-1124537969)를 위한 Rosetta 전환 환경이 가능해야 합니다.
+다음을 실행해서 수동으로 설치할 수 있습니다.
+
+```bash
+$ sudo softwareupdate --install-rosetta --agree-to-license
+```
 :::
 
 ## Flutter SDK 가져오기
 
 1. Flutter SDK의 마지막 안정 릴리즈를 다운받기 위해 아래의 설치번들을 다운로드 하세요.
   
-    [flutter_macos_2.10.3-stable.zip](https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_2.10.3-stable.zip)
+    * **인텔** [flutter_macos_3.0.5-stable.zip](https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_3.0.5-stable.zip)
+
+    * **애플 실리콘** [flutter_macos_arm64_3.0.5-stable.zip](https://storage.googleapis.com/flutter_infra_release/releases/stable/macos/flutter_macos_arm64_3.0.5-stable.zip)
   
     다른 릴리즈나 오래된 빌드버전은 [SDK releases](https://docs.flutter.dev/development/tools/sdk/releases) 페이지를 참고하세요.
+
+    :::tip
+    애플 실리콘 프로세서를 사용하는 맥인지 확인하기 위해 apple.com의 [애플 싪리콘 맥 컴퓨터](https://support.apple.com/en-us/HT211814)를 참고하세요.
+    :::
 2. 다음과 같이 원하는 위치에 파일을 압축해지 합니다.
 
     ```bash
     $ cd ~/development
-    $ unzip ~/Downloads/flutter_macos_2.10.3-stable.zip
+    $ unzip ~/Downloads/flutter_macos_3.0.5-stable.zip
     ```
 3. `flutter` 도구를 환경경로에 추가합니다.
 
@@ -152,30 +168,6 @@ Flutter 도구 분석은 최초실행시 전송되지는 않습니다.
     $ which flutter
     ```
 
-::: tip
-Flutter 1.19.0 dev 릴리즈 이상부터 Flutter SDK에 `flutter`명령과 함께 `dart`명령이 포함되어 보다 쉽게 Dart 명령줄 프로그램을 실행할 수 있습니다.
-Flutter SDK를 다운받으면 자동으로 호환되는 Dart를 다운받게 되며, 별도로 Dart SDK를 다운받은 경우 두 버전이 호환되지 않을 수 있으므로 Flutter 버전의 `dart`가 path에 가장 우선시 되어야 합니다.
-아래의 명령은 `flutter`와 `dart` 명령이 동일한 `bin` 디렉터리에 시작하여 호환되는지 여부를 알려줍니다.
-
-```bash
-$ which flutter dart
-/path-to-flutter-sdk/bin/flutter
-/usr/local/bin/dart
-```
-
-위 경우에는 두 명령이 같은 bin 디렉터리에 있지 않습니다.
-`/path-to-flutter-sdk/bin`의 명령이 `/usr/local/bin`(위 경우) 명령보다 먼저오도록 path를 갱신합니다.
-변경된 내용을 쉘에 적용한 뒤 `which` 명령을 다시 실행해보면 `flutter`와 `dart` 명령이 같은 디렉터리에 있는 것을 볼 수 있습니다.
-
-```bash
-$ which flutter dart
-/path-to-flutter-sdk/bin/flutter
-/path-to-flutter-sdk/bin/dart
-```
-
-`dart` 명령을 더 자세히 배우고 싶으면 명령줄에서 `dart -h`를 실행하거나 [dart 도구 페이지](https://dart.dev/tools/dart-vm)를 보시기 바랍니다.
-:::
-
 ## 플랫폼 설정
 
 macOS는 iOS, Android, 웹에서 Flutter 앱을 개발할 수 있게 지원합니다.
@@ -229,7 +221,7 @@ iOS 시뮬레이터로 Flutter 앱을 실행하고 테스트하려면 다음 단
     ```bash
     $ flutter create my_app
     ```
-2. ```my_app``` 디렉터리가 생성되며 Flutter 시작 앱을 포함하고 있습니다. 해당 디렉터리로 이동합니다.
+2. `my_app` 디렉터리가 생성되며 Flutter 시작 앱을 포함하고 있습니다. 해당 디렉터리로 이동합니다.
 
     ```bash
     $ cd my_app
@@ -253,35 +245,39 @@ Flutter 앱을 실제 iOS 장치에 배포하려면 Xcode에서 물리장치배�
     ```
 
     ::: tip
-    Ruby의 기본버전은 CocoaPods 젬을 설치하기 위해 ```sudo```를 요구합니다.
-    만약 Ruby 버전관리자를 사용한다면 ```sudo```없이 실행 할 수 있습니다.
+    Ruby의 기본버전은 CocoaPods 젬을 설치하기 위해 `sudo`를 요구합니다.
+    만약 Ruby 버전관리자를 사용한다면 `sudo`없이 실행 할 수 있습니다.
+
+    추가로, [애플 실리콘 맥](https://support.apple.com/en-us/HT211814)에서 설치를 진행한다면, 다음 명령를 실행하세요.
+    ```bash
+    $ sudo gem uninstall ffi && sudo gem install ffi -- --enable-libffi-alloc
+    ```
     :::
 2. Xcode 서명 흐름을 따라 프로젝트를 프로비저닝합니다.
-    1. Flutter 프로젝트 디렉터리에서 터미널 윈도우를 열고 ```open ios/Runner .xcworkspace```를 실행하여 프로젝트의 Xcode 워크스페이스를 엽니다.
+    1. Flutter 프로젝트 디렉터리에서 터미널 윈도우를 열고 `open ios/Runner .xcworkspace`를 실행하여 프로젝트의 Xcode 워크스페이스를 엽니다.
     2. run 버튼 옆에 있는 device 드롭다운메뉴에서 배포하려는 장치를 선택합니다.
-    3. 왼쪽 탐색패널에서 ```Runner``` 프로젝트를 선택합니다.
-    4. ```Runner``` 대상 설정페이지의 **Signing & Capabilities > Team** 아래에 개발팀이 선택되어있는지 확인합니다.
+    3. 왼쪽 탐색패널에서 `Runner` 프로젝트를 선택합니다.
+    4. `Runner` 대상 설정페이지의 **Signing & Capabilities > Team** 아래에 개발팀이 선택되어있는지 확인합니다.
+    팀을 선택하면 Xcode는 개발인증서를 생성하고 다운받고, 계정에 장치를 등록하고 (필요시) 프로비저닝 프로파일을 생성 및 다운받습니다.
+        * 최초 iOS 개발프로젝트를 시작하려면 Xcode에 애플ID로 로그인해야합니다.
+        개발 및 테스트는 어떤 애플ID던 지원합니다.
+        애플 개발자 프로그램에 등록하는 것은 앱스토어에 앱을 배포할 때 필요로 합니다.
+        자세한 멤버쉽유형은 [멤버쉽 선택하기](https://developer.apple.com/support/compare-memberships)를 참고하세요.
 
-        팀을 선택하면 Xcode는 개발인증서를 생성하고 다운받고, 계정에 장치를 등록하고 (필요시) 프로비저닝 프로파일을 생성 및 다운받습니다.
+            ![xcode-account](./xcode-account.png)
 
-            * 최초 iOS 개발프로젝트를 시작하려면 Xcode에 애플ID로 로그인해야합니다.
+        * iOS 개발에 연결된 물리장치를 처음 사용할때 장치에서 Mac과 개발인증을 신뢰해야합니다.
+        iOS 장치에서 Mac으로 처음 접속할 때 팝업에서 `Trust`를 선택합니다.
+        그리고나서 iOS 장치에서 설정 앱으로 이동한뒤 **General > Device Management**를 선택하고 인증을 신뢰합니다.
+        최초 사용자의 경우 **General > Profiles > Device Management**를 대신 선택해야합니다.
 
-                ![계정정보입력](https://docs.flutter.dev/assets/images/docs/setup/xcode-account.png)
+            ![trust-computer](./trust-computer.png)
 
-                개발 및 테스트는 어떤 애플ID던 지원합니다.
-                애플 개발자 프로그램에 등록하는 것은 앱스토어에 앱을 배포할 때 필요로 합니다.
-                자세한 멤버쉽유형은 [멤버쉽 선택하기](https://developer.apple.com/support/compare-memberships)를 참고하세요.
-            * iOS 개발에 연결된 물리장치를 처음 사용할때 장치에서 Mac과 개발인증을 신뢰해야합니다.
-                iOS 장치에서 Mac으로 처음 접속할 때 팝업에서 ```Trust```를 선택합니다.
+                
+        * Xcode에서 자동 서명이 실패할 경우 프로젝트의 **General > Identity > Bundle Identifier**가 유니크한지 확인하시기 바랍니다.
 
-                ![신뢰하기](https://docs.flutter.dev/assets/images/docs/setup/trust-computer.png)
-
-                그리고나서 iOS 장치에서 설정 앱으로 이동한뒤 ***General > Device Management**를 선택하고 인증을 신뢰합니다.
-                최초 사용자의 경우 **General > Profiles > Device Management**를 대신 선택해야합니다.
-            * Xcode에서 자동 서명이 실패할 경우 프로젝트의 **General > Identity > Bundle Identifier**가 유니크한지 확인하시기 바랍니다.
-
-                ![프로젝트 식별자 확인](https://docs.flutter.dev/assets/images/docs/setup/xcode-unique-bundle-id.png)
-3. ```flutter run```을 실행하거나 Xcode에서 Run 버튼을 클릭하여 앱을 시작합니다.
+            ![xcode-unique-bundle-id](./xcode-unique-bundle-id.png)
+3. `flutter run`을 실행하거나 Xcode에서 Run 버튼을 클릭하여 앱을 시작합니다.
         
 
 ## Android 설정
@@ -349,30 +345,12 @@ Flutter를 사용하기 전에 Android SDK 플랫폼 라이선스를 동의해�
 
 ## macOS 설정
 
-::: warning
-**베타입니다!**
-여기서 다루는 데스크톱지원은 베타 릴리즈에서 가능합니다.
-베타지원은 접근성지원을 포함하여 여전히 눈에 띄는 기능적 격차가 있습니다.
-안정채널에서 데스크톱지원 베타스냅샷을 체험하거나 베타채널에서 데스크톱의 마지막 변경사항을 적용할 수 있습니다.
-보다 자세한 내용은 Medium의 무료기사인 [Flutter 2의 새로운기능](https://medium.com/flutter/whats-new-in-flutter-2-0-fe8e95ecc65)에서 **Desktop** 섹션을 확인하시기 바랍니다. 
-:::
-
 ### 추가적인 macOS 요구사항
 
 macOS 데스크톱 개발을 위해 Flutter SDK 외에 추가로 아래의 내용이 필요합니다.
 
 * [Xcode](https://developer.apple.com/xcode/)
 * 플러그인을 사용한다면 [CocoaPods](https://cocoapods.org/)
-
-### 데스크톱 지원 활성화하기
-
-명령줄에서 아래의 명령을 실행하여 데스크톱 지원을 활성화 합니다.
-
-```bash
-$ flutter config --enable-macos-desktop
-```
-
-자세한 정보는 [Flutter의 데스크톱 지원](https://docs.flutter.dev/desktop)을 참고하세요.
 
 ## 웹 설정
 

@@ -1,7 +1,10 @@
 ---
-title: 3. 체험해보기
+title: Flutter 체험해보기
 prev: /flutter/get-started/editor/
 next: /flutter/get-started/codelab
+tag:
+    - Flutter
+    - 3.0.5
 ---
 
 이번 장에서는 템플릿으로 새로운 Flutter 앱을 만들고, 실행하고 앱에 변경이 있을 때 "핫리로드"를 경험해보는 내용입니다.

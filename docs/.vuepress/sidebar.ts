@@ -62,10 +62,10 @@ export default sidebar({
             prefix: "install/",
             link: "install/",
             children: [
-              "windows",
-              "macos",
-              "linux",
-              "chromeos"
+              { text: "Windows", link: "windows" },
+              { text: "MacOS", link: "macos" },
+              { text: "Linux", link: "linux" },
+              { text: "ChromeOS", link: "chromeos" }
             ]
           },
           {
@@ -73,9 +73,9 @@ export default sidebar({
             prefix: "editor/",
             link: "editor/",
             children: [
-              "androidstudio",
-              "visualstudiocode",
-              "emacs"
+              { text: "Android Studio(IntelliJ)", link: "androidstudio" },
+              { text: "Visual Studio Code", link: "visualstudiocode" },
+              { text: "Emacs", link: "emacs" }
             ]
           },
           {
@@ -83,13 +83,19 @@ export default sidebar({
             prefix: "test-drive/",
             link: "test-drive/",
             children: [
-              "androidstudio",
-              "visualstudiocode",
-              "terminal"
+              { text: "Android Studio(IntelliJ)", link: "androidstudio" },
+              { text: "Visual Studio Code", link: "visualstudiocode" },
+              { text: "터미널과 에디터", link: "terminal"}
             ]
           },
-          "codelab",
-          "learn-more"
+          {
+            text: "4. 첫번째 앱 만들기",
+            children: [
+              { text: "파트 1", link: "codelab" },
+              { text: "파트 2", link: "codelab2" }
+            ]
+          },
+          { text: "5. 더 알아보기", link: "learn-more" }
         ]
       }
   ],
