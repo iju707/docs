@@ -168,3 +168,24 @@ tag:
 
 ## 모집단 잡 결과
 
+마지막 샘플 잡 (`url_scanning`) 은 모집단 이상 탐지 잡 입니다.
+`response_code_rates` 잡 결과에서 보듯 몇몇 클라이언트가 비정상적으로 많은 수의 URL에 접근합니다.
+`url_scanning` 샘플 잡은 그런 유형의 문제를 조사하기 위해 다른 방법을 제공합니다.
+`url.keyword`에 `high_distinct_count` 함수를 사용한 단일 디텍터를 가지고 있으며 해당 항목에 대한 비정상적으로 많은 수의 고유값을 감지합니다.
+그런 다음 `clientip` 항목에 정의된 대로 동작이 모집단의 클라이언트에 따라 다른지 분석합니다.
+
+**Anomaly Explorer** 의 `url_scanning` 이상 탐지 잡에서 결과를 검사하면 차트가 다른 형식을 가지고 있음을 알게 될 것이다.
+예로 들어,
+
+![ml-gs-job3-explorer.jpg](./ml-gs-job3-explorer.jpg)
+
+이 경우, 각각 클라이언트 IP의 지표는 각 버킷의 다른 클라이언트 IP에 대해 분석됩니다.
+그리고 `30.156.16.164` 클라이언트 IP가 비정상적 행동을 하고 있음을 볼 수 있습니다.
+
+모집단 이상 탐지 잡의 다른 예제로 하고 싶으면 예제 이커머스 주문 데이터 셋을 추가하세요.
+`high_sum_total_sales` 잡은 각 시간 버킷에 다른 고객에 비해 비정상적으로 구매한 고객을 판별합니다.
+이 예제에서 두명의 고객이 이상 이벤트로 감지됩니다.
+
+![ml-gs-job4-explorer.jpg](./ml-gs-job4-explorer.jpg)
+
+더 자세한 정보는 [모집단 분석 수행하기](https://www.elastic.co/guide/en/machine-learning/7.13/ml-configuring-populations.html)를 참고하세요.
