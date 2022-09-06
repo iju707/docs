@@ -3,11 +3,11 @@ title: ELK로 머신러닝 기능 사용해보기
 tag:
     - Elasticsearch
     - Machine Learning
-    - 7.17
-next: gs-visualizer
+    - 7.13
+next: ml-gs-visualizer
 ---
 
-원문 : [https://www.elastic.co/guide/en/machine-learning/7.17/ml-getting-started.html](https://www.elastic.co/guide/en/machine-learning/7.17/ml-getting-started.html)
+원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-getting-started.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-getting-started.html)
 
 머신러닝 기능은 데이터를 분석하고 행동에 대한 패턴을 위한 모델을 생성합니다.
 선택할 분석에 대한 유형은 현재 직면해 있는 질문이나 문제와 사용가능한 데이터의 유형에 따라 선택됩니다.
@@ -77,7 +77,7 @@ next: gs-visualizer
 
 2. 머신러닝 기능을 사용하기 위해 적절하게 환경이 구성되었는지 검증합니다.
   엘라스틱서치 보안 기능이 활성화 되어있으면, 이 튜토리얼을 해보기 위해 이상 탐지 잡을 관리할 수 있는 권한을 가진 사용자가 필요합니다.
-  [설정 및 보안](setup.md)을 참고하세요.
+  [설정 및 보안](./ml-setup.md)을 참고하세요.
 
 3. [키바나로 올릴 예시 데이터 셋을 추가합니다](https://www.elastic.co/guide/en/kibana/7.17/get-started.html#gs-get-data-into-kibana).
   

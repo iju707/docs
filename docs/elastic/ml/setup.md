@@ -3,8 +3,10 @@ title: ELK에 머신러닝 설정하기
 tag:
     - Elasticsearch
     - Machine Learning
-    - 7.17
+    - 7.13
 ---
+
+원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/setup.html](https://www.elastic.co/guide/en/machine-learning/7.13/setup.html)
 
 ## 사전 요구사항
 

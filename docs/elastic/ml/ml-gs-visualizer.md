@@ -3,11 +3,10 @@ title: 키바나로 데이터 조회하기
 tag:
     - Elasticsearch
     - Machine Learning
-    - 7.17
-prev: getting-started
+    - 7.13
 ---
 
-원문 : [https://www.elastic.co/guide/en/machine-learning/7.17/ml-gs-visualizer.html](https://www.elastic.co/guide/en/machine-learning/7.17/ml-gs-visualizer.html)
+원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-visualizer.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-visualizer.html)
 
 머신러닝 분석으로 최상의 결과를 얻으려면, 데이터를 먼저 이해해야 합니다.
 데이터 타입과 값의 범위, 분포를 알고 있어야 합니다.
@@ -43,13 +42,13 @@ Data Visualizer는 데이터의 항목을 조회할 수 있게 해줍니다.
     이 항목에 대해 Data Visualizer에서 고유한 값의 수와 상위 값 목록, 해당 항목을 포함한 문서의 수와 비율을 제공합니다.
     예로 들어,
 
-    ![ml-gs-data-keyword](./ml-gs-data-keyword.jpg)
+    ![ml-gs-data-keyword](./images/ml-gs-data-keyword.jpg)
 
     수치 항목에서는 Data Visualizer가 최소값, 중앙값, 최대값, 상위 값, 고유한 값의 수, 분산에 대한 정보를 제공합니다.
     데이터에서 값이 어떻게 클러스터링 되어있는지에 대한 좋은 생각을 얻기 위해 분산 차트를 사용할 수도 있습니다.
     예로 들어,
 
-    ![ml-gs-data-metric](./ml-gs-data-metric.jpg)
+    ![ml-gs-data-metric](./images/ml-gs-data-metric.jpg)
 
     :::tip
     `@timestamp` 항목의 날짜 범위를 기억하세요.

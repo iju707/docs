@@ -3,8 +3,10 @@ title: 키바나에서 이상탐지 결과 보기
 tag:
     - Elasticsearch
     - Machine Learning
-    - 7.17
+    - 7.13
 ---
+
+원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-results.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-results.html)
 
 데이터피드가 시작되고 이상탐지 잡이 일부 데이터 처리가 완료되면 키바나에서 결과를 볼 수 있습니다.
 
@@ -12,7 +14,7 @@ tag:
 장치의 사양에 따라 초기 결과를 생성하기까지 머신러닝 분석을 몇초 동안 기다려야할 수 있습니다.
 :::
 
-![ml-gs-web-results](./ml-gs-web-results.jpg)
+![ml-gs-web-results](./images/ml-gs-web-results.jpg)
 
 머신러닝 기능은 데이터의 입력스트림을 분석하고 행동을 모델화 하여 각각 잡의 디텍터 기반으로 분석합니다.
 모델 밖에서 이벤트가 발생하면 이벤트는 이상으로 식별됩니다.
@@ -35,7 +37,7 @@ tag:
 
 2. **Single_Metric_Viewer** 에서 결과를 보기위해 `low_request_rate` 잡의 **Actions** 컬럼에 있는 차트 아이콘을 클릭합니다.
 
-![ml-gs-job1-analysis](./ml-gs-job1-analysis.jpg)
+![ml-gs-job1-analysis](./images/ml-gs-job1-analysis.jpg)
 
 이 뷰는 시간기반 실제와 예측 값들을 표현하는 차트로 구성되어있습니다.
 잡에서 `model_plot_config` 가 활성화되어있을 때만 가능합니다.
@@ -71,7 +73,7 @@ tag:
 뷰어의 **Anomalies** 영역에서 각 이상치의 시간, 실제/예상(일반적) 값, 확률 등에 대한 상세정보를 볼수 있습니다.
 예로 들어,
 
-![ml-gs-job1-anomalies](./ml-gs-job1-anomalies.jpg)
+![ml-gs-job1-anomalies](./images/ml-gs-job1-anomalies.jpg)
 
 **Actions** 열에 **Discover** 에서 연관된 문서를 위한 쿼리를 생성할 수 있는 **Row Data** 와 같은 추가적인 옵션이 있습니다.
 [**custom URLs**](https://www.elastic.co/guide/en/machine-learning/7.17/ml-configuring-url.html)로 actions 메뉴에 추가적인 링크를 생성할 수도 있습니다.
@@ -83,7 +85,7 @@ tag:
 주석은 특정 시간기간에 이벤트를 참고할 수 있도록 메모할 수 있습니다.
 사용자가 생성하거나 이상 탐지 잡에서 모델의 변화, 주목할 사건을 반영하기 위해 자동으로 생성할 수 있습니다.
 
-![ml-gs-user-annotation](./ml-gs-user-annotation.jpg)
+![ml-gs-user-annotation](./images/ml-gs-user-annotation.jpg)
 
 이상수치를 식별한 뒤, 보통의 다음단계는 그러한 상황의 맥락을 파악하는 것 입니다.
 예로 들어, 문제에 기여하는 다른 요인이 있는지?
@@ -121,7 +123,7 @@ tag:
 
 이 특정 잡에 대해, 각 클라이언트 IP나 응답코드에 대해 별도의 분리된 그래프에서 볼수 있게 고를 수 있습니다.
 
-![ml-gs-job2-explorer.jpg](./ml-gs-job2-explorer.jpg)
+![ml-gs-job2-explorer.jpg](./images/ml-gs-job2-explorer.jpg)
 
 잡이 `response.keyword` 를 파티션 항목으로 사용했기때문에 분석은 그 항목의 유일한 값 각각에 완전히 다른 기준선을 가지게 되어 세분화 됩니다.
 엔티티별로 시간 패턴을 살펴보면 일괄보기에 숨겨져 있는 항목을 찾을 수 있습니다.
@@ -129,7 +131,7 @@ tag:
 이상 타임라인 아래 어노테이션 섹션이 있습니다.
 **Annotations** 섹션의 좌측에 있는 선택박스를 사용하여 이벤트의 타입으로 필터할 수 있습니다.
 
-![ml-gs-annotations.jpg](./ml-gs-annotations.jpg)
+![ml-gs-annotations.jpg](./images/ml-gs-annotations.jpg)
 
 **Anomaly Explorer**의 왼쪽에는 동일한 시간 기간에 감지된 이상치의 상위 인플루언서 목록이 있습니다.
 목록에는 모든 디텍터에서 각 인플루언서별, 버킷별 집계가 되는 최대 이상 점수가 포함됩니다.
@@ -139,7 +141,7 @@ tag:
 그래프의 섹션을 클릭해서 해당 시간 기간에 대한 이상들에 대한 상세한 정보를 얻을 수 있습니다.
 예로 들어, `response.keyword`의 값이 `404`인 그래프의 빨간섹션을 클릭합니다.
 
-![ml-gs-job2-explorer-anomaly.jpg](./ml-gs-job2-explorer-anomaly.jpg)
+![ml-gs-job2-explorer-anomaly.jpg](./images/ml-gs-job2-explorer-anomaly.jpg)
 
 이상이 언제 발생했는지에 대한 정확한 시간을 볼 수 있습니다.
 잡에 다수의 디텍터나 매트릭이 있는 경우 어떤게 이상의 원인이 되는지 볼 수 있습니다.
@@ -148,7 +150,7 @@ tag:
 차트 아래에 평상시와 실제 값, 이상에 기여한 인플루언서 등과 같은 제공되는 상세한 정보의 테이블이 있습니다.
 예로 들어, 아래 그림과 같습니다.
 
-![ml-gs-job2-explorer-table.jpg](./ml-gs-job2-explorer-table.jpg)
+![ml-gs-job2-explorer-table.jpg](./images/ml-gs-job2-explorer-table.jpg)
 
 잡이 다수의 디텍터를 가진다면, 디텍터마다 최고 심각도의 이상치와 **found for** 열에 표시되는 항목 값인 엔티티를 보여주기 위해 테이블이 이상을 집계합니다.
 집계없이 모든 이상을 보려면 **Interval**을 `Show all`로 설정합니다.
@@ -177,7 +179,7 @@ tag:
 **Anomaly Explorer** 의 `url_scanning` 이상 탐지 잡에서 결과를 검사하면 차트가 다른 형식을 가지고 있음을 알게 될 것이다.
 예로 들어,
 
-![ml-gs-job3-explorer.jpg](./ml-gs-job3-explorer.jpg)
+![ml-gs-job3-explorer.jpg](./images/ml-gs-job3-explorer.jpg)
 
 이 경우, 각각 클라이언트 IP의 지표는 각 버킷의 다른 클라이언트 IP에 대해 분석됩니다.
 그리고 `30.156.16.164` 클라이언트 IP가 비정상적 행동을 하고 있음을 볼 수 있습니다.
@@ -186,6 +188,6 @@ tag:
 `high_sum_total_sales` 잡은 각 시간 버킷에 다른 고객에 비해 비정상적으로 구매한 고객을 판별합니다.
 이 예제에서 두명의 고객이 이상 이벤트로 감지됩니다.
 
-![ml-gs-job4-explorer.jpg](./ml-gs-job4-explorer.jpg)
+![ml-gs-job4-explorer.jpg](./images/ml-gs-job4-explorer.jpg)
 
 더 자세한 정보는 [모집단 분석 수행하기](https://www.elastic.co/guide/en/machine-learning/7.13/ml-configuring-populations.html)를 참고하세요.

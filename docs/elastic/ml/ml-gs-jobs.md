@@ -3,10 +3,10 @@ title: 키바나에서 이상 탐지 잡 만들어보기
 tag:
     - Elasticsearch
     - Machine Learning
-    - 7.17
+    - 7.13
 ---
 
-원문 : [https://www.elastic.co/guide/en/machine-learning/7.17/ml-gs-jobs.html](https://www.elastic.co/guide/en/machine-learning/7.17/ml-gs-jobs.html)
+원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-jobs.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-jobs.html)
 
 키바나 샘플 데이터 셋은 체험할 수 있도록 몇몇 사전구성된 이상탐지 잡을 포함하고 있습니다.
 잡을 추가하기 위해 아래의 방법 또한 사용할 수 있습니다.
@@ -16,7 +16,7 @@ tag:
 * 머신 러닝 앱에서 **Data Visualizer** 또는 **Anomaly Detection** 잡 마법사에서 `kibana_sample_data_logs` 인덱스 패턴을 선택할 때 알려진 구성을 사용하여 잡을 생성할 것인지 추천합니다.
   **Kibana sample data web logs** 구성을 선택합니다.
 
-![ml-gs-create-web-jobs-1](./ml-gs-create-web-jobs-1.jpg)
+![ml-gs-create-web-jobs-1](./images/ml-gs-create-web-jobs-1.jpg)
 
 기본값을 선택하고 **Create Jobs** 를 클릭합니다.
 
