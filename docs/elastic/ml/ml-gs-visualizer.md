@@ -38,7 +38,7 @@ Data Visualizer는 데이터의 항목을 조회할 수 있게 해줍니다.
     항목 이름이나 [항목 유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/mapping-types.html)으로 목록을 필터할 수 있습니다.
     Data Visualizer는 선택된 시간 범위의 샘플에서 얼마만큼의 문서가 각 항목을 포함하는지 가리킵니다.
 
-    특히, 이상 탐지 잡에서 사용할 `clientip`, `response.keyword`, `url.keyword`를 살펴보세요.
+    특히, 이상탐지 잡에서 사용할 `clientip`, `response.keyword`, `url.keyword`를 살펴보세요.
     이 항목에 대해 Data Visualizer에서 고유한 값의 수와 상위 값 목록, 해당 항목을 포함한 문서의 수와 비율을 제공합니다.
     예로 들어,
 

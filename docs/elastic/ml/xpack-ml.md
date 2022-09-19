@@ -1,5 +1,5 @@
 ---
-title: 이상 탐지
+title: 이상탐지
 tag:
     - Elasticsearch
     - Machine Learning

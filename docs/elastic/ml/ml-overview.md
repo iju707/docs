@@ -1,10 +1,11 @@
 ---
-title: 이상 탐지 개요
+title: 이상탐지 개요
 tag:
     - Elasticsearch
     - Machine Learning
     - 7.13
 prev: xpack-ml
+next: ml-overview
 ---
 
 원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-overview.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-overview.html)
@@ -52,4 +53,14 @@ prev: xpack-ml
 예측 생성 기능에 영향을 미치는 제한 사항에 대한 자세한 내용은 [지원되지 않는 예측 구성](./ml-limitations#ml-forecast-config-limitations)을 참고하세요.
 
 
-## 이상 탐지 알고리즘 {#anomaly-algorithms}
+## 이상탐지 알고리즘 {#anomaly-algorithms}
+
+이상탐지 머신러닝 기능은 클러스터링, 다양한 유형의 시계열 분해, 베이지안 분포 모델링 및 상관 분석 등과 같은 다양한 기술의 맞춤형 융합을 사용합니다.
+이 분석들은 시계열 데이터에 대해 정교한 실시간 자동화된 이상탐지를 제공합니다.
+
+머신러닝은 과거 동작을 관찰하고 새로운 데이터에 적응하여 데이터의 시간기반 특성을 통계적으로 모델분석합니다.
+모델은 정상적인 행동의 기준선을 나타내므로 새로운 이벤트가 얼마나 변칙적인지를 결정하는 데 사용할 수 있습니다.
+
+각 [버킷 범위](ml-buckets.md)별 이상탐지 결과가 기록됩니다.
+이러한 결과에는 노이즈를 줄이기 위해 집계된 점수와 수학적으로 가장 중요한 이상치에 순위를 매기기 위한 정규화된 점수가 포함됩니다.
+더 자세한 내용은 [버킷 결과](ml-buckets.md#ml-bucket-results)와 [인플루언서 결과](ml-influencers.md#ml-influencer-results)를 참고하세요.

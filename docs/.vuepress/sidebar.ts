@@ -147,7 +147,20 @@ export default sidebar({
           text: "이상탐지",
           link: "xpack-ml",
           children: [
-            { text: "이상탐지 개요", link: "ml-overview" }
+            { text: "이상탐지 개요", link: "ml-overview" },
+            {
+              text: "이상탐지 개념",
+              link: "ml-concepts",
+              children: [
+                { text: "잡", link: "ml-jobs" },
+                { text: "데이터피드", link: "ml-datafeeds" },
+                { text: "버킷", link: "ml-buckets" },
+                { text: "인플루언서", link: "ml-influencers" },
+                { text: "달력과 계획된 이벤트", link: "ml-calendars" },
+                { text: "사용자정의 규칙", link: "ml-rules" },
+                { text: "모델 스냅샷", link: "ml-model-snapshots" }
+              ]
+            }
           ]
         }
       ]
