@@ -12,7 +12,7 @@ next: ml-gs-visualizer
 머신러닝 기능은 데이터를 분석하고 행동에 대한 패턴을 위한 모델을 생성합니다.
 선택할 분석에 대한 유형은 현재 직면해 있는 질문이나 문제와 사용가능한 데이터의 유형에 따라 선택됩니다.
 
-## 비지도 머신러닝 {get-started-unsupervised}
+## 비지도 머신러닝 {#get-started-unsupervised}
 
 훈련이나 간섭없이 데이터의 패턴과 관계를 추론할 수 있는 두가지 유형의 분석이 있습니다. 이상탐지, 이상치 탐지
 
@@ -26,7 +26,7 @@ next: ml-gs-visualizer
 이상치 점수로 마킹된 데이터 지점이 있는 데이터 셋의 복제본을 생성합니다.
 점수는 데이터 지점이 다른 데이터 지점에 비해 얼마나 이상치인지 정도를 나타냅니다.
 
-## 지도 머신러닝 {get-started-supervised}
+## 지도 머신러닝 {#get-started-supervised}
 
 학습 데이터셋이 필요한 두가지 유형의 분석이 있습니다. 분류, 회귀
 
@@ -37,7 +37,7 @@ next: ml-gs-visualizer
 
 [회귀](https://www.elastic.co/guide/en/machine-learning/7.17/dfa-regression.html)는 웹 요청에 대한 응답시간과 같은 연속적 수치값을 예측하기 위해 데이터 지점간의 관계를 학습합니다.
 
-## 한번해보기 {get-started-prereqs}
+## 한번해보기 {#get-started-prereqs}
 
 시범삼아 머신러닝을 해볼 준비가 되었나요?
 아래 튜토리얼을 해봅시다.

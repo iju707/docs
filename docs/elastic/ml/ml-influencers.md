@@ -38,7 +38,7 @@ tag:
 많은 인플루언서를 선택하면, 결과는 압도적이며 분석에 약간의 오버헤드가 있습니다.
 :::
 
-## 인플루언서 결과는 {ml-influencer-results}
+## 인플루언서 결과는 {#ml-influencer-results}
 
 인플루언서 결과는 어떤 엔티티가 비정상적이고 언제인지 보여줍니다.
 하나의 인플루언서 결과는 버킷의 변칙성에 영향을 준 각 인플루언서에서 버킷마다 작성됩니다.
@@ -71,6 +71,6 @@ tag:
 이상치 목록은 레코드 수준의 이상점수를 사용합니다.
 :::
 
-## 더 알아보기 {futher-reading}
+## 더 알아보기 {#futher-reading}
 
 [ML의 해석 가능성 : 이상, 인플루언서, 근본원인의 식별](https://www.elastic.co/blog/interpretability-in-ml-identifying-anomalies-influencers-root-causes)

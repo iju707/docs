@@ -1,14 +1,17 @@
 import { defineUserConfig } from "vuepress";
-import theme from "./theme";
+import theme from "./theme.js";
 import googleAnalyticsPlugin from '@vuepress/plugin-google-analytics';
-import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
-  lang: "en-US",
-  title: "문서번역모음",
-  description: "문서 번역 모음입니다.",
-
   base: "/",
+
+  locales: {
+    "/": {
+      lang: "en-US",
+      title: "문서번역모음",
+      description: "문서 번역 모음입니다.",
+    }
+  },
 
   head: [
     ['link', { rel: "icon", type: "image/png", href: "/logo.png" }],
@@ -19,7 +22,6 @@ export default defineUserConfig({
   plugins: [
     googleAnalyticsPlugin({
       id: 'UA-41121759-18'
-    }),
-    searchPlugin({})
+    })
   ]
 });

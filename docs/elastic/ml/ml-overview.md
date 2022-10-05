@@ -10,7 +10,7 @@ next: ml-overview
 
 원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-overview.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-overview.html)
 
-## 과거와 현재 분석하기 {ml-analyzing}
+## 과거와 현재 분석하기 {#ml-analyzing}
 
 머신러닝 기능은 시계열 데이터 분석을 자동화하여 데이터에 대한 일반 행동의 정확한 기준점을 생성하고 이상 패턴을 식별합니다.
 분석을 위한 데이터는 배치나 실시간 데이터피드로 연속해서 제공할 수 있습니다.
@@ -27,7 +27,7 @@ next: ml-overview
 
 ![overview-smv.jpg](./images/overview-smv.jpg)
 
-## 미래 예측하기 {ml-forecasting}
+## 미래 예측하기 {#ml-forecasting}
 
 머신러닝 기능을 가지고 데이터의 일반적인 행동에 대한 기준점을 생성한 뒤, 이 정보를 활용해서 미래 행동을 추정할 수 있습니다.
 
@@ -53,7 +53,7 @@ next: ml-overview
 예측 생성 기능에 영향을 미치는 제한 사항에 대한 자세한 내용은 [지원되지 않는 예측 구성](./ml-limitations#ml-forecast-config-limitations)을 참고하세요.
 
 
-## 이상탐지 알고리즘 {anomaly-algorithms}
+## 이상탐지 알고리즘 {#anomaly-algorithms}
 
 이상탐지 머신러닝 기능은 클러스터링, 다양한 유형의 시계열 분해, 베이지안 분포 모델링 및 상관 분석 등과 같은 다양한 기술의 맞춤형 융합을 사용합니다.
 이 분석들은 시계열 데이터에 대해 정교한 실시간 자동화된 이상탐지를 제공합니다.
