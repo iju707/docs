@@ -18,4 +18,8 @@ features:
   - title: Boto3 Library
     details: AWS Boto3 Library 공식문서 번역
     link: /aws/boto3/
+
+  - title: Elastic 머신러닝
+    details: Elastic 머신러닝
+    link: /elastic/ml/
 ---

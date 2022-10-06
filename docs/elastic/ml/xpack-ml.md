@@ -5,7 +5,7 @@ tag:
     - Machine Learning
     - 7.13
 prev: ml-gs-next
-next: ml-overview
+next: ml-concepts
 ---
 
 원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/xpack-ml.html](https://www.elastic.co/guide/en/machine-learning/7.13/xpack-ml.html)

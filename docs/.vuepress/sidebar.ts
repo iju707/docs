@@ -160,6 +160,16 @@ export default sidebar({
                 { text: "사용자정의 규칙", link: "ml-rules" },
                 { text: "모델 스냅샷", link: "ml-model-snapshots" }
               ]
+            },
+            {
+              text: "이상탐지 구성",
+              link: "ml-configuration",
+              children: [
+                { text: "이상탐지 잡 생성하기", link: "create-jobs" },
+                { text: "머신러닝 이상탐지 중단하기", link: "stopping-ml" },
+                { text: "실패한 이상탐지 잡 재시작하기", link: "ml-restart-failed-jobs" },
+                { text: "규모에 맞는 이상탐지 작업하기", link: "anomaly-detection-scale" }
+              ]
             }
           ]
         }
