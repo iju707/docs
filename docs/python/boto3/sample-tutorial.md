@@ -166,3 +166,5 @@ Hello, boto3! (Daniel)
 ```
 
 참조 : [SQS.Queue.receive_messages()](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.receive_messages), [SQS.Message.delete()](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.delete)
+
+<AdsenseB />

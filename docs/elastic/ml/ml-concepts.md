@@ -19,3 +19,5 @@ next: ml-jobs
 * [달력과 계획된 이벤트](ml-calendars.md)
 * [사용자정의 규칙](ml-rules.md)
 * [모델 스냅샷](ml-model-snapshots.md)
+
+<AdsenseB />

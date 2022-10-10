@@ -20,21 +20,6 @@ export default hopeTheme({
       navbar: navbar,
 
       sidebar: sidebar,
-
-      footer: `
-      <div class="ad-outer">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1537305666483956" crossorigin="anonymous"></script>
-          <ins class="adsbygoogle ad-inner"
-              data-ad-client="ca-pub-1537305666483956"
-              data-ad-slot="6991744222"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
-          <script>
-              (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-      </div>
-      `,
-      displayFooter: true,
       
       metaLocales: {
         editLink: "페이지 수정하기"

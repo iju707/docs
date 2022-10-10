@@ -64,3 +64,5 @@ next: ml-overview
 각 [버킷 범위](ml-buckets.md)별 이상탐지 결과가 기록됩니다.
 이러한 결과에는 노이즈를 줄이기 위해 집계된 점수와 수학적으로 가장 중요한 이상치에 순위를 매기기 위한 정규화된 점수가 포함됩니다.
 더 자세한 내용은 [버킷 결과](ml-buckets.md#ml-bucket-results)와 [인플루언서 결과](ml-influencers.md#ml-influencer-results)를 참고하세요.
+
+<AdsenseB />

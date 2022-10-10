@@ -23,3 +23,5 @@ next: create-jobs
 이상탐지 잡을 생성하고 중단하는 방법을 배운 뒤 좀더 전문가적 설정과 시나리오를 위해 [예제](anomaly-examples.md)를 확인해보세요.
 
 대규모 이상탐지 잡의 특성에 대해 자세히 알고 싶으면 [규모에 맞는 이상탐지 작업하기](anomaly-detection-scale.md)를 참고하세요.
+
+<AdsenseB />

@@ -168,3 +168,5 @@ Docker Compose 항목에 `environment`나 `env_file`이 없는 경우에만 `Doc
 [v1 Compose 파일](compose-file/compose-file-v1.md#link-environment-variables)에 ['links' 옵션](compose-file/compose-file-v3.md#links)을 사용할 경우, 환경변수는 각각의 링크에 생성됩니다.
 이 변수는 만료되었습니다.
 like 별칭대신 hostname을 사용하시기 바랍니다.
+
+<AdsenseB />

@@ -74,3 +74,5 @@ tag:
 ## 더 알아보기 {#futher-reading}
 
 [ML의 해석 가능성 : 이상, 인플루언서, 근본원인의 식별](https://www.elastic.co/blog/interpretability-in-ml-identifying-anomalies-influencers-root-causes)
+
+<AdsenseB />

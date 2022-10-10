@@ -56,3 +56,5 @@ Data Visualizer는 데이터의 항목을 조회할 수 있게 해줍니다.
     :::
 
 이제, `kibana_sample_data_logs` 인덱스의 데이터에 대해 익숙해졌으며 몇가지 분석할 이상탐지 잡을 만들 수 있습니다.
+
+<AdsenseB />

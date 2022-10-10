@@ -48,3 +48,5 @@ tag:
 * `url_scanning` 은 `high_distinct_count` 함수를 사용하고 `clientip` 항목의 모집단 분석을 수행하여 비정상적으로 높은 고유한 수의 URL에 접근하는 클라이언트 IP를 찾습니다.
 
 다음 단계는 결과를 보고 3개의 잡에서 생성된 인사이트의 유형을 살펴보겠습니다.
+
+<AdsenseB />

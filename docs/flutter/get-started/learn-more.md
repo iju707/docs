@@ -7,4 +7,6 @@ tag:
     - 3.0.5
 ---
 
-원문 : [https://docs.flutter.dev/get-started/learn-more](https://docs.flutter.dev/get-started/learn-more)./
+원문 : [https://docs.flutter.dev/get-started/learn-more](https://docs.flutter.dev/get-started/learn-more)
+
+<AdsenseB />

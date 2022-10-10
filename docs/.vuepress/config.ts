@@ -14,7 +14,7 @@ export default defineUserConfig({
   },
 
   head: [
-    ['link', { rel: "icon", type: "image/png", href: "/logo.png" }],
+    ['link', { rel: "icon", type: "image/png", href: "/logo.png" }]
   ],
 
   theme,

@@ -172,3 +172,5 @@ Created TensorFlow device (/device:GPU:1 with 13970 MB memory) -> physical GPU (
 ...
 gpu_test_1 exited with code 0
 ```
+
+<AdsenseB />
