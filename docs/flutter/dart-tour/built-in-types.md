@@ -259,6 +259,8 @@ Dart는 `list`를 `List<int>` 타입으로 추정합니다.
 자세한 정보는 [타입 추론](https://dart.dev/guides/language/type-system#type-inference)을 참고하세요.
 :::
 
+{#trailing-comma}
+
 Dart 콜렉션 리터럴의 마지막 아이템에 콤마를 추가할 수 있습니다.
 마지막 콤마는 콜렉션에 영향을 주지는 않지만 복사-붙여넣기 오류를 방지할 수 있습니다.
 
