@@ -93,9 +93,9 @@ const Scrollbar({super.key, required Widget child});
 
 누군가 `child` 매개변수 없이 `Scrollbar`를 만들려고 시도한다면 분석기는 이슈를 보고할 것 입니다.
 
-### 선택적 매개변수 {#optional-positional-parameters}
+### 선택적 위치 매개변수 {#optional-positional-parameters}
 
-함수의 매개변수 집합을 `[]`로 감싸면 선택적 매개변수로 지정됩니다.
+함수의 매개변수 집합을 `[]`로 감싸면 선택적 위치 매개변수로 지정됩니다.
 
 ```dart
 String say(String from, String msg, [String? device]) {
@@ -121,12 +121,61 @@ assert(say('Bob', 'Howdy', 'smoke signal') == 'Bob says Howdy with a smoke signa
 
 ### 매개변수 기본값 {#default-parameter-values}
 
+함수에 명명된, 위치적 둘다 선택적 매개변수에 대한 기본값을 `=`을 사용하여 정의할 수 있습니다.
+기본값은 컴파일타임 상수여야 합니다.
+만약 기본값이 제공되지 않으면 `null`이 기본값입니다.
 
+명명된 매개변수에 기본값을 설정하는 예제입니다.
+
+```dart
+// [bold]와 [hidden] 플래그를 설정 ...
+void enableFlags({bool bold = false, bool hidden = false}) {...}
+
+// bold는 ture가 되고 hidden은 false가 됩니다.
+enableFlags(bold: true);
+```
+
+:::note
+**지원중단 참고사항** : 
+예전 코드는 명명된 매개변수의 기본값을 정의하는데 `=`대신 콜론(`:`)을 사용했습니다.
+그 이유는 원래 `:`는 명명된 매개변수만 지원하기 때문입니다.
+이 지원은 지원중단되었고 삭제될 예정입니다.
+따라서 [기본값 정의에 `=`를 사용](https://dart.dev/guides/language/effective-dart/usage#do-use--to-separate-a-named-parameter-from-its-default-value)을 추천드립니다.
+
+[prefer_equal_for_default_values](https://dart.dev/tools/linter-rules#prefer_equal_for_default_values) 린터 규칙을 활성화 하면, [`dart fix`](https://dart.dev/tools/dart-fix)를 사용해서 제안되는 `=` 문법으로 전환할 수 있습니다.
+:::
+
+다음은 위치적 매개변수에 대한 기본값을 설정하는 예제입니다.
+
+```dart
+String say(String from, String msg, [String device = 'carrier pigeon']) {
+    var result = '$from says $msg with a $device';
+    return result;
+}
+
+assert(say('Bob', 'Howdy') == 'Bob says Howdy with a carrier pigeon');
+```
+
+기본값으로 리스트나 맵을 전달할 수 있습니다.
+아래 예제는 `doStuff()`를 정의하며 `list` 매개변수에 기본 리스트를, `gifts` 매개변수에 기본맵을 지정합니다.
+
+```dart
+void doStuff(
+    {List<int> list = const [1, 2, 3],
+    Map<String, String> gifts = const {
+        'first': 'paper',
+        'second': 'cotton',
+        'third': 'leather'
+    }}) {
+    print('list: $list');
+    print('gifts: $gifts');
+}
+```
 
 ## main() 함수 {#the-main-function}
 
 모든 앱은 앱의 진입점을 제공하는 최상위 `main()` 함수를 가지고 있어야 합니다.
-`main()` 함수는 `void`를 반환하고 선택적으로 `List<String>` 파라미터를 인자로 받습니다.
+`main()` 함수는 `void`를 반환하고 선택적으로 `List<String>` 매개변수를 인자로 받습니다.
 
 간단한 `main()` 함수 예제입니다.
 
