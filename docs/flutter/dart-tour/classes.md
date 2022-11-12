@@ -13,4 +13,6 @@ tag:
 
 ### 연산자 {#operators}
 
+## 열거형 {#enumerated-types}
+
 <AdsenseB />
