@@ -1,5 +1,6 @@
 import { sidebar } from "vuepress-theme-hope";
 import dartTour from "./sidebar/dart-tour";
+import dependencyInjector from "./sidebar/dependency-injector";
 
 export default sidebar({
   "/spring/core/ioc/": [
@@ -101,6 +102,7 @@ export default sidebar({
       }
   ],
   "/flutter/dart-tour/": dartTour,
+  "/python/dependency-injector/": dependencyInjector,
   "/python/boto3/": [
     {
       text: "Boto3 Library",

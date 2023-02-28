@@ -68,6 +68,10 @@ export default navbar([
       {
         text: "Boto3 Library",
         link: "boto3/"
+      },
+      {
+        text: "Dependency Injector",
+        link: "dependency-injector/"
       }
     ]
   },

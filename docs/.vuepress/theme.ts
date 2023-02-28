@@ -34,6 +34,7 @@ export default hopeTheme({
       repoId: "R_kgDOHrj9wQ",
       category: "General",
       categoryId: "DIC_kwDOHrj9wc4CQb4g",
+      reactionsEnabled: false
     },
     mdEnhance: {
       align: true,
