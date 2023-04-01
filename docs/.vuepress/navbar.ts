@@ -46,6 +46,17 @@ export default navbar([
     ]
   },
   {
+    text: "Dart",
+    prefix: "/dart/",
+    icon: "mobile",
+    children: [
+      {
+        text: "Dart 언어",
+        link: "language/"
+      }
+    ]
+  },
+  {
     text: "Flutter",
     prefix: "/flutter/",
     icon: "mobile",

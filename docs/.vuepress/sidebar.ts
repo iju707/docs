@@ -1,4 +1,5 @@
 import { sidebar } from "vuepress-theme-hope";
+import dartLanguage from "./sidebar/dart-language";
 import dartTour from "./sidebar/dart-tour";
 import dependencyInjector from "./sidebar/dependency-injector";
 
@@ -54,6 +55,7 @@ export default sidebar({
       ],      
     },
   ],
+  "/dart/language/": dartLanguage,
   "/flutter/get-started/": [
       {
         text: "Flutter 시작하기",
