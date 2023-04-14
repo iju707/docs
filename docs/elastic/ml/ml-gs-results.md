@@ -1,9 +1,6 @@
 ---
 title: 키바나에서 이상탐지 결과 보기
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 ---
 
 원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-results.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-results.html)

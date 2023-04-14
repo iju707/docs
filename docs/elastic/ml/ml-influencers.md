@@ -1,9 +1,6 @@
 ---
 title: 이상탐지 인플루언서
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 ---
 
 비정상 이벤트가 발생하면 왜 발생했는지 알고싶을 것 입니다.

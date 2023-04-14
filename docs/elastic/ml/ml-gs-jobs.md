@@ -1,9 +1,6 @@
 ---
 title: 키바나에서 이상탐지 잡 만들어보기
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 ---
 
 원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-jobs.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-jobs.html)

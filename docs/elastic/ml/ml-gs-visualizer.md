@@ -1,9 +1,6 @@
 ---
 title: 키바나로 데이터 조회하기
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 ---
 
 원문 : [https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-visualizer.html](https://www.elastic.co/guide/en/machine-learning/7.13/ml-gs-visualizer.html)

@@ -1,9 +1,6 @@
 ---
 title: ELK로 머신러닝 기능 사용해보기
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 next: ml-gs-visualizer
 ---
 

@@ -1,9 +1,6 @@
 ---
 title: 이상탐지 달력
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 ---
 
 가끔은 은행 휴무일, 블랙프라이데이, 계획된 시스템점검 등 일어나는 비정상적인 행동을 예측할 수 있는 때가 있습니다.

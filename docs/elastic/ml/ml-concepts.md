@@ -1,9 +1,6 @@
 ---
 title: 이상탐지 개념
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 prev: ml-overview
 next: ml-jobs
 ---

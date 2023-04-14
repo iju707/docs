@@ -1,9 +1,6 @@
 ---
 title: 이상탐지
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 prev: ml-gs-next
 next: ml-concepts
 ---

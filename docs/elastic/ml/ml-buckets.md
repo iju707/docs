@@ -1,9 +1,6 @@
 ---
 title: 이상탐지 버킷
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 ---
 
 머신러닝 기능은 처리를 위한 배치단위로 시계열을 나누기 위하여 버킷이라는 개념을 사용합니다.

@@ -1,9 +1,6 @@
 ---
 title: 이상탐지 구성하기
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 prev: ml-model-snapshots
 next: create-jobs
 ---

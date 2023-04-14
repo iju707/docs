@@ -1,9 +1,6 @@
 ---
 title: 이상탐지 사용자정의 규칙
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 ---
 
 기본적으로 [과거와 현재 분석하기](ml-overview.md#ml-analyzing)에서 설명했듯 이상탐지는 비지도방식이며 머신러닝 모델은 데이터 도메인을 인식하지 못합니다.

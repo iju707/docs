@@ -1,9 +1,6 @@
 ---
 title: 이상탐지 데이터피드
-tag:
-    - Elasticsearch
-    - Machine Learning
-    - 7.13
+tag: ["Elasticsearch", "Machine Learning", "7.13"]
 ---
 
 이상탐지 잡은 엘라스틱서치나 API를 통해 다른 소스에서 전송된 데이터를 가지고 분석을 할 수 있습니다.

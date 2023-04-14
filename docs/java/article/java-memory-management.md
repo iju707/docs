@@ -1,7 +1,6 @@
 ---
 title: 자바가상머신(JVM)에서 자바 메모리 관리
-sidebar: auto
-sidebarDepth: 2
+sidebar: heading
 ---
 
 [원글 : Java Memory Management for Java Virtual Machine (JVM)](https://www.betsol.com/blog/java-memory-management-for-java-virtual-machine-jvm/)

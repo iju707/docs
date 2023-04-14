@@ -28,7 +28,7 @@ var image = {
 };
 ```
 
-기본값 및 `final`과 `const` 키워드, 특수 유형을 포함하여 Dart에서 변수에 대하여 [더 읽어보세요](https://dart.dev/language/variables).
+기본값 및 `final`과 `const` 키워드, 특수 유형을 포함하여 Dart에서 변수에 대하여 [더 읽어보세요](variables.md).
 
 ## 흐름 제어문 {#control-flow-statements}
 
@@ -78,7 +78,7 @@ flybyObjects.where((name) => name.contains('turn')).forEach(print);
 
 익명함수를 보여주는것 외에(`where()` 인자), 함수를 인자로 사용할 수 있는 코드를 보여줍니다. (`forEach()`의 인자로 상위 `print()` 함수를 전달)
 
-선택적 인자, 기본 인자값, 어휘적 범위를 포함하여 Dart의 함수에 대해 [더 읽어보세요](https://dart.dev/language/functions).
+선택적 인자, 기본 인자값, 어휘적 범위를 포함하여 Dart의 함수에 대해 [더 읽어보세요](functions.md).
 
 ## 주석 {#comments}
 
@@ -94,7 +94,7 @@ Dart의 주석은 일반적으로 `//`으로 시작합니다.
 /* Comments like these are also supported. */
 ```
 
-문서화 도구가 어떻게 작동하는지를 포함하여 Dart의 주석에 대해 [더 읽어보세요](https://dart.dev/language/comments).
+문서화 도구가 어떻게 작동하는지를 포함하여 Dart의 주석에 대해 [더 읽어보세요](comments.md).
 
 ## 가져오기 {#imports}
 
@@ -111,7 +111,7 @@ import 'package:test/test.dart';
 import 'path/to/my_other_file.dart';
 ```
 
-라이브러리 접두사 및 `show`와 `hide`, `deferred` 키워드를 통한 지연 로딩 등을 포함하여 Dart의 라이브러리와 가시성에 대해 [더 읽어보세요](https://dart.dev/language/libraries).
+라이브러리 접두사 및 `show`와 `hide`, `deferred` 키워드를 통한 지연 로딩 등을 포함하여 Dart의 라이브러리와 가시성에 대해 [더 읽어보세요](libraries.md).
 
 ## 클래스 {#classes}
 
@@ -410,12 +410,12 @@ Dart 언어에 대해 배우고자 할 경우 다음의 사실과 개념을 염�
 
 * 자바와 다르게 Dart는 `public`, `protected`나 `private` 키워드가 없습니다.
   밑줄(`_`)로 식별자를 시작하면, 라이브러리내 비공개입니다.
-  자세한 내용은 [라이브러리와 가져오기](https://dart.dev/language/libraries)을 참고하세요.
+  자세한 내용은 [라이브러리와 가져오기](libraries.md)을 참고하세요.
 
 * 식별자는 문자나 밑줄(`_`)로 시작할 수 있으며 그 뒤에는 문자와 숫자의 조합이 가능합니다.
 
 * Dart는 표현식(런타임 값이 있는)과 명령문(그렇지 않음)을 가지고 있습니다.
-  예로 들어, [조건 표현식](https://dart.dev/language/operators#conditional-expressions)인 `condition ? expr1 : expr2`는 `expr1` 또는 `expr2` 값을 가지고 있습니다.
+  예로 들어, [조건 표현식](operators.md#conditional-expressions)인 `condition ? expr1 : expr2`는 `expr1` 또는 `expr2` 값을 가지고 있습니다.
   비교하여 [if-else 명령문](https://dart.dev/language/control-flow#if-and-else)은 값이 없습니다.
   명령문은 종종 한개 이상의 표현식을 포함하지만 표현식은 명령문을 직접 포함하지는 않습니다.
 
