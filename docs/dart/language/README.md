@@ -54,7 +54,7 @@ while (year < 2016) {
 }
 ```
 
-`break`, `continue`, `switch`, `case`, `assert`를 포함하여 Dart의 흐름 제어문에 대해 [더 읽어보세요](https://dart.dev/language/control-flow).
+`break`, `continue`, `switch`, `case`, `assert`를 포함하여 Dart의 흐름 제어문에 대해 [더 읽어보세요](control-flow.md).
 
 ## 함수 {#functions}
 
@@ -374,7 +374,7 @@ Future<void> describeFlybyObjects(List<String> flybyObjects) async {
 참고할 것은 위 코드는 비동기 입니다.
 `try`는 동기 코드 및 `async` 함수의 코드 모두 동작합니다.
 
-스택트레이스, `rethrow`, `Error`와 `Exception` 차이점 등 예외에 대하여 [더 읽어보세요](https://dart.dev/language/error-handling#exceptions).
+스택트레이스, `rethrow`, `Error`와 `Exception` 차이점 등 예외에 대하여 [더 읽어보세요](error-handling.md#exceptions).
 
 ## 주요 개념 {#important-concepts}
 
@@ -416,7 +416,7 @@ Dart 언어에 대해 배우고자 할 경우 다음의 사실과 개념을 염�
 
 * Dart는 표현식(런타임 값이 있는)과 명령문(그렇지 않음)을 가지고 있습니다.
   예로 들어, [조건 표현식](operators.md#conditional-expressions)인 `condition ? expr1 : expr2`는 `expr1` 또는 `expr2` 값을 가지고 있습니다.
-  비교하여 [if-else 명령문](https://dart.dev/language/control-flow#if-and-else)은 값이 없습니다.
+  비교하여 [if-else 명령문](control-flow.md#if-and-else)은 값이 없습니다.
   명령문은 종종 한개 이상의 표현식을 포함하지만 표현식은 명령문을 직접 포함하지는 않습니다.
 
 * Dart 툴은 경고와 에러 두가지 유형의 문제를 알려줍니다.

@@ -47,7 +47,7 @@ assert(lineCount == null);
 :::note
 운영 코드는 `assert()` 호출을 무시합니다.
 하지만 개발중에는 `assert(condition)`에서 조건이 false일 경우 예외가 발생하게 됩니다.
-자세한 정보는 [Assert](https://dart.dev/language/control-flow#assert)를 참고하세요.
+자세한 정보는 [Assert](control-flow.md#assert)를 참고하세요.
 :::
 
 null 안전을 활성화 하면 변수를 사용하기 전에 null이 아닌 값으로 무조건 초기화 해야합니다.

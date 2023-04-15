@@ -39,7 +39,7 @@ bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
 
 :::note
 표현식만(명령문은 아님) 화살표(`=>`)와 세미콜론(`;`) 사이에 위치할 수 있습니다.
-예로 들어, [`if`](https://dart.dev/language/control-flow#if-and-else) 명령문은 위치할 수 없으나 [조건 표현식](operators.md#conditional-expressions)은 가능합니다.
+예로 들어, [`if`](control-flow.md#if-and-else) 명령문은 위치할 수 없으나 [조건 표현식](operators.md#conditional-expressions)은 가능합니다.
 :::
 
 ## 매개변수 {#parameters}

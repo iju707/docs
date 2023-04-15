@@ -39,6 +39,10 @@ export default [
         link: "functions"
     },
     {
+        text: "상태흐름제어",
+        link: "control-flow"
+    },
+    {
         text: "예외처리",
         link: "error-handling"
     }

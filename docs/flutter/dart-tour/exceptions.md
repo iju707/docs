@@ -19,7 +19,7 @@ Dart는 [Exception](https://api.dart.dev/stable/dart-core/Exception-class.html)�
 그러나, Dart 프로그램은 Exception이나 Error 객체 뿐만 아니라 null이 아닌 객체를 예외처럼 발생시킬 수 있습니다.
 
 ## throw {#throw}
-
+å
 여기 예외를 발생시키거나 전달시키는 예제입니다.
 
 ```dart
