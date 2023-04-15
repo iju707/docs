@@ -40,6 +40,10 @@ export default [
             {
                 text: "내장유형",
                 link: "built-in-types"
+            },
+            {
+                text: "typedef",
+                link: "typedefs"
             }
         ]
     },
