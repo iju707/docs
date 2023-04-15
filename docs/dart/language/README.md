@@ -150,7 +150,7 @@ class Spacecraft {
 }
 ```
 
-문자열 보간 및 리터럴, 표현식, `toString()` 메소드를 포함하여 문자열에 대해 [더 읽어보세요](https://dart.dev/language/built-in-types#strings).
+문자열 보간 및 리터럴, 표현식, `toString()` 메소드를 포함하여 문자열에 대해 [더 읽어보세요](built-in-types.md#strings).
 
 `Spacecraft` 클래스를 아래와 같이 사용할 것 입니다.
 
@@ -423,7 +423,7 @@ Dart 언어에 대해 배우고자 할 경우 다음의 사실과 개념을 염�
   경고는 코드가 동작하지 않을 수 있지만 프로그램 실행을 중단시키지는 않습니다.
   에러는 컴파일타임 또는 런타임에 발생할 수 있습니다.
   컴파일타임 에러는 코드가 전혀 실행되지 않습니다.
-  런타임 에러는 코드가 실행중에 [예외](exceptions.md)가 발생합니다.
+  런타임 에러는 코드가 실행중에 [예외](error-handling.md#exceptions)가 발생합니다.
 
 ## 추가적인 자료 {#additional-resources}
 

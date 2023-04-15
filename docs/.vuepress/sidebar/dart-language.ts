@@ -35,6 +35,15 @@ export default [
         ]
     },
     {
+        text: "유형",
+        children: [
+            {
+                text: "내장유형",
+                link: "built-in-types"
+            }
+        ]
+    },
+    {
         text: "함수",
         link: "functions"
     },

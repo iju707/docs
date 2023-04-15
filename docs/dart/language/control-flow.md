@@ -34,7 +34,7 @@ if (isRaining()) {
 ```
 
 명령문 조건은 부울 값으로 계산이 되는 표현식이어야 합니다.
-더 많은 정보는 [부울](https://dart.dev/language/built-in-types#booleans)을 참고하세요.
+더 많은 정보는 [부울](built-in-types.md#booleans)을 참고하세요.
 
 ## for 반복구 {#for-loops}
 

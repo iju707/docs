@@ -286,7 +286,7 @@ assert((-value >>> 4) > 0); // 부호없는 오른쪽 쉬프트
 
 ## 조건 표현식 {#conditional-expressions}
 
-Dart는 [if-else](control-flow-statements.md#if-and-else) 명령문이 필요한 표현식을 간결하게 할 수 있는 두개의 연산자를 가지고 있습니다.
+Dart는 [if-else](control-flow.md#if-and-else) 명령문이 필요한 표현식을 간결하게 할 수 있는 두개의 연산자를 가지고 있습니다.
 
 `조건 ? 표현식1 : 표현식2`
 
