@@ -136,7 +136,7 @@ candidates
 ## Swtich와 case {#switch-and-case}
 
 Dart의 Switch 명령문은 정수, 문자열 또는 컴파일타임 상수를 `==`를 사용하여 비교합니다.
-비교된 객체는 동일한 클래스(하위 유형이 아닌)의 인스턴스이어야 하며, 클래스는 `==`를 오버라이드하면 안됩니다.
+비교된 객체는 동일한 클래스(하위 타입이 아닌)의 인스턴스이어야 하며, 클래스는 `==`를 오버라이드하면 안됩니다.
 [열거형](https://dart.dev/language/enum)은 `switch` 명령문에 잘 동작합니다.
 
 각각의 공백이 아닌 `case` 조건은 규칙처럼 `break` 명령문으로 끝납니다.
@@ -231,7 +231,7 @@ assert(number < 100);
 assert(urlString.startsWith('https'));
 ```
 
-어서션에 메세지를 붙이기 위해 `assert`의 두번째 인자로 문자열을 추가합니다. (선택적으로 [마지막 콤마](https://dart.dev/language/collections#lists) 포함)
+어서션에 메세지를 붙이기 위해 `assert`의 두번째 인자로 문자열을 추가합니다. (선택적으로 [마지막 콤마](collections.md#lists) 포함)
 
 ```dart
 assert(urlString.startsWith('https'),

@@ -52,7 +52,7 @@ bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
 다음 절에서 자세하게 알아보겠습니다.
 :::
 
-함수에 인자를 전달하거나 함수의 매개변수를 정의할 때 [마지막 콤마](https://dart.dev/language/collections#lists)를 사용할 수 있습니다.
+함수에 인자를 전달하거나 함수의 매개변수를 정의할 때 [마지막 콤마](collections.md#lists)를 사용할 수 있습니다.
 
 ### 명명된 매개변수 {#named-parameters}
 
@@ -113,7 +113,7 @@ repeat(times: 2, () {
 ### 선택적 위치 매개변수 {#optional-positional-parameters}
 
 함수의 매개변수 집합을 `[]`로 감싸면 선택적 위치 매개변수로 지정됩니다.
-기본값을 제공하지 않으면 해당 유형의 기본값이 `null`이 될 수 있도록 null 가능이어야 합니다.
+기본값을 제공하지 않으면 해당 타입의 기본값이 `null`이 될 수 있도록 null 가능이어야 합니다.
 
 ```dart
 String say(String from, String msg, [String? device]) {

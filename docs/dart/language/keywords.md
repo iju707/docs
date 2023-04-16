@@ -20,7 +20,7 @@ tag:
 | [case](control-flow.md#switch-and-case) | [factory](https://dart.dev/language/constructors#factory-constructors)<sup>2</sup> | [mixin](https://dart.dev/language/mixins)<sup>2</sup> | [throw](error-handling.md#throw) |
 | [catch](error-handling.md#catch) | [false](built-in-types.md#booleans) | [new](https://dart.dev/language/classes#using-constructors) | [true](built-in-types.md#booleans) |
 | [class](https://dart.dev/language/classes#instance-variables) | [final](variables.md#final-and-const) | [null](variables.md#default-value) | [try](error-handling.md#catch) |
-| [const](variables.md#final-and-const) | [finally](error-handling.md#finally) | [on](error-handling.md#catch)<sup>1</sup> | [typedefs](https://dart.dev/language/typedefs)<sup>2</sup> |
+| [const](variables.md#final-and-const) | [finally](error-handling.md#finally) | [on](error-handling.md#catch)<sup>1</sup> | [typedefs](typedefs.md)<sup>2</sup> |
 | [continue](control-flow.md#break-and-continue) | [for](control-flow.md#for-loops) | [operator](https://dart.dev/language/methods#operators)<sup>2</sup> | [var](variables.md) |
 | [covariant](https://dart.dev/guides/language/sound-problems#the-covariant-keyword)<sup>2</sup> | [Function](functions.md)<sup>2</sup> | [part](https://dart.dev/guides/libraries/create-library-packages#organizing-a-library-package) | [void](built-in-types.md) |
 | [default](control-flow.md#switch-and-case) | [get](https://dart.dev/language/methods#getters-and-setters)<sup>2</sup> | [required](functions.md#named-parameters)<sup>2</sup> | [while](control-flow.md#while-and-do-while) |

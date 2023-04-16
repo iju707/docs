@@ -172,7 +172,7 @@ foo = [1, 2, 3]; // 원래는 const []
 baz = [42]; // 오류 : 상수 변수는 값을 할당할 수 없습니다.
 ```
 
-[타입 확인 및 변환](operators.md#type-test-operators)(`is`와 `as`), [콜렉션 if](https://dart.dev/language/collections#collection-operators)와 [스프레드 연산자](https://dart.dev/language/collections#spread-operators) (`...`와 `...?`)를 사용하여 상수를 선언할 수 있습니다.
+[타입 확인 및 변환](operators.md#type-test-operators)(`is`와 `as`), [콜렉션 if](collections.md#collection-operators)와 [스프레드 연산자](collections.md#spread-operators) (`...`와 `...?`)를 사용하여 상수를 선언할 수 있습니다.
 
 ```dart
 const Object i = 3; // i는 int 값을 가지는 const 객체
@@ -186,6 +186,6 @@ const set = {if (list is List<int>) ...list}; // ...와 스프레드
 이와 대조되어 불변성을 가지기 떄문에 `const` 객체와 필드는 변경이 불가능합니다.
 :::
 
-상수값을 생성할 때 `const`를 사용하는 것에 대한 자세한 정보는 [리스트](https://dart.dev/language/collections#lists), [맵](https://dart.dev/language/collections#maps)이나 [클래스](https://dart.dev/language/classes)를 참고하세요.
+상수값을 생성할 때 `const`를 사용하는 것에 대한 자세한 정보는 [리스트](collections.md#lists), [맵](collections.md#maps)이나 [클래스](https://dart.dev/language/classes)를 참고하세요.
 
 <AdsenseB />

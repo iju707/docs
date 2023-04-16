@@ -35,14 +35,18 @@ export default [
         ]
     },
     {
-        text: "유형",
+        text: "타입",
         children: [
             {
-                text: "내장유형",
+                text: "내장타입",
                 link: "built-in-types"
             },
             {
-                text: "typedef",
+                text: "콜렉션",
+                link: "collections"
+            },
+            {
+                text: "타입정의",
                 link: "typedefs"
             }
         ]

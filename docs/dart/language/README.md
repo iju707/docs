@@ -14,8 +14,8 @@ Dart의 코어 라이브러리에 대해 배우려면 [라이브러리 둘러보
 
 ## 변수 {#variables}
 
-[형식이 안전](https://dart.dev/language/type-system)한 Dart 코드에서 대부분의 변수를 그들의 유형을 명시적으로 지정하지 않고 `var`를 사용하여 선언할 수 있습니다.
-유형추론 덕에 변수의 유형은 초기 값에 의하여 결정됩니다.
+[형식이 안전](https://dart.dev/language/type-system)한 Dart 코드에서 대부분의 변수를 그들의 타입을 명시적으로 지정하지 않고 `var`를 사용하여 선언할 수 있습니다.
+타입추론 덕에 변수의 타입은 초기 값에 의하여 결정됩니다.
 
 ```dart
 var name = 'Voyager I';
@@ -28,7 +28,7 @@ var image = {
 };
 ```
 
-기본값 및 `final`과 `const` 키워드, 특수 유형을 포함하여 Dart에서 변수에 대하여 [더 읽어보세요](variables.md).
+기본값 및 `final`과 `const` 키워드, 특수 타입을 포함하여 Dart에서 변수에 대하여 [더 읽어보세요](variables.md).
 
 ## 흐름 제어문 {#control-flow-statements}
 
@@ -58,7 +58,7 @@ while (year < 2016) {
 
 ## 함수 {#functions}
 
-각 함수의 인자와 반환 값에 대한 유형을 지정하는 것을 [권장합니다](https://dart.dev/guides/language/effective-dart/design#types).
+각 함수의 인자와 반환 값에 대한 타입을 지정하는 것을 [권장합니다](https://dart.dev/guides/language/effective-dart/design#types).
 
 ```dart
 int fibonacci(int n) {
@@ -138,7 +138,7 @@ class Spacecraft {
   // 메소드
   void describe() {
     print('Spacecraft: $name');
-    // 유형 상승은 getter에서 동작하지 않습니다.
+    // 타입 상승은 getter에서 동작하지 않습니다.
     var launchDate = this.launchDate;
     if (launchDate != null) {
       int years = DateTime.now().difference(launchDate).inDays ~/ 365;
@@ -166,9 +166,9 @@ voyager3.describe();
 
 ## 열거형 {#enums}
 
-열거형은 사전정의된 값 또는 인스턴스(다른 유형의 인스턴스가 없는 조건)의 집합을 열거하는 방법입니다.
+열거형은 사전정의된 값 또는 인스턴스(다른 타입의 인스턴스가 없는 조건)의 집합을 열거하는 방법입니다.
 
-사전정의된 식물유형의 간단한 목록인 단순 `enum`의 예제입니다.
+사전정의된 식물타입의 간단한 목록인 단순 `enum`의 예제입니다.
 
 ```dart
 enum PlanetType { terrestrial, gas, ice }
@@ -419,7 +419,7 @@ Dart 언어에 대해 배우고자 할 경우 다음의 사실과 개념을 염�
   비교하여 [if-else 명령문](control-flow.md#if-and-else)은 값이 없습니다.
   명령문은 종종 한개 이상의 표현식을 포함하지만 표현식은 명령문을 직접 포함하지는 않습니다.
 
-* Dart 툴은 경고와 에러 두가지 유형의 문제를 알려줍니다.
+* Dart 툴은 경고와 에러 두가지 타입의 문제를 알려줍니다.
   경고는 코드가 동작하지 않을 수 있지만 프로그램 실행을 중단시키지는 않습니다.
   에러는 컴파일타임 또는 런타임에 발생할 수 있습니다.
   컴파일타임 에러는 코드가 전혀 실행되지 않습니다.

@@ -16,7 +16,7 @@ Dart 코드는 예외를 발생시키고 감지할 수 있습니다.
 Java와는 달리, 모든 Dart의 예외는 미확인 예외입니다.
 함수는 어떤 예외가 발생할지 선언하지 않으며, 어떤 예외든 감지할 필요는 없습니다.
 
-Dart는 [Exception](https://api.dart.dev/stable/dart-core/Exception-class.html)와 [Error](https://api.dart.dev/stable/dart-core/Error-class.html) 유형을 제공하며 다양한 사전정의된 하위 유형이 있습니다.
+Dart는 [Exception](https://api.dart.dev/stable/dart-core/Exception-class.html)와 [Error](https://api.dart.dev/stable/dart-core/Error-class.html) 타입을 제공하며 다양한 사전정의된 하위 타입이 있습니다.
 물론 당신만의 예외를 정의할 수 있습니다.
 그러나, Dart 프로그램은 Exception이나 Error 객체 뿐만 아니라 null이 아닌 객체를 예외처럼 발생시킬 수 있습니다.
 
@@ -35,7 +35,7 @@ throw 'Out of llamas';
 ```
 
 :::note
-운영수준의 코드에서는 일반적으로 [Error](https://api.dart.dev/stable/dart-core/Error-class.html)나 [Exception](https://api.dart.dev/stable/dart-core/Exception-class.html)의 구현체 유형을 예외로 발생시킵니다.
+운영수준의 코드에서는 일반적으로 [Error](https://api.dart.dev/stable/dart-core/Error-class.html)나 [Exception](https://api.dart.dev/stable/dart-core/Exception-class.html)의 구현체 타입을 예외로 발생시킵니다.
 :::
 
 예외를 발생시키는 것은 표현식이기 때문에 `=>` 명렴운 안에 예외를 발생시킬 수 있으며 표현식이 가능한 어디든 사용할 수 있습니다.
@@ -57,9 +57,9 @@ try {
 }
 ```
 
-한가지 유형 이상의 예외를 발생시키는 코드를 다룰 때는, 다중 catch 조건을 정의하면 됩니다.
-발생된 객체 유형과 일치하는 첫번째 조건에서 예외를 다룹니다.
-catch 조건에 유형을 별도 식별하지 않으면 조건은 발생한 객체의 모든 유형을 다루게 됩니다.
+한가지 타입 이상의 예외를 발생시키는 코드를 다룰 때는, 다중 catch 조건을 정의하면 됩니다.
+발생된 객체 타입과 일치하는 첫번째 조건에서 예외를 다룹니다.
+catch 조건에 타입을 별도 식별하지 않으면 조건은 발생한 객체의 모든 타입을 다루게 됩니다.
 
 ```dart
 try {
@@ -71,13 +71,13 @@ try {
     // 예외인 모든 것
     print('Unknown exeption : $e');
 } catch (e) {
-    // 유형이 없으면 모두 처리
+    // 타입이 없으면 모두 처리
     print('Something really unknown: $e');
 }
 ```
 
 위에 코드를 보듯, `on`이나 `catch` 또는 둘다를 사용할 수 있습니다.
-`on`은 예외 유형을 지정하고자 할 때 사용합니다.
+`on`은 예외 타입을 지정하고자 할 때 사용합니다.
 `catch`는 예외처리에서 예외 객체를 사용할 때 필요합니다.
 
 `catch()`에 한개 또는 두개의 인자를 지정할 수 있습니다.
