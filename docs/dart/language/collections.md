@@ -98,7 +98,7 @@ assert(listOfStrings[1] == '#1');
 콜렉션 `if`나 `for`의 사용에 대한 자세한 정보와 예제는 [콜렉션 제어흐름 제안](https://github.com/dart-lang/language/blob/master/accepted/2.3/control-flow-collections/feature-specification.md)을 참고하세요.
 
 리스트 타입은 리스트를 조작하기 위해 다양한 간편한 함수를 가지고 있습니다.
-리스트에 대한 자세한 정보는 [제너릭](https://dart.dev/language/generics)과 [콜렉션](https://dart.dev/guides/libraries/library-tour#collections)을 참고하세요.
+리스트에 대한 자세한 정보는 [제너릭](generics.md)과 [콜렉션](https://dart.dev/guides/libraries/library-tour#collections)을 참고하세요.
 
 ## 세트 {#sets}
 

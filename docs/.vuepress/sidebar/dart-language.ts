@@ -48,6 +48,10 @@ export default [
             {
                 text: "타입정의",
                 link: "typedefs"
+            },
+            {
+                text: "제너릭",
+                link: "generics"
             }
         ]
     },
