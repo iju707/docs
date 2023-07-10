@@ -46,12 +46,16 @@ export default [
                 link: "collections"
             },
             {
+                text: "제너릭",
+                link: "generics"
+            },
+            {
                 text: "타입정의",
                 link: "typedefs"
             },
             {
-                text: "제너릭",
-                link: "generics"
+                text: "타입 시스템",
+                link: "type-system"
             }
         ]
     },
@@ -66,5 +70,42 @@ export default [
     {
         text: "예외처리",
         link: "error-handling"
+    },
+    {
+        text: "클래스&객체",
+        children: [
+            {
+                text: "클래스",
+                link: "classes"
+            },
+            {
+                text: "생성자",
+                link: "constructors"
+            },
+            {
+                text: "메소드",
+                link: "methods"
+            },
+            {
+                text: "클래스 확장",
+                link: "extend"
+            },
+            {
+                text: "Mixin",
+                link: "mixins"
+            },
+            {
+                text: "열거형타입",
+                link: "enum"
+            },
+            {
+                text: "확장된 메소드",
+                link: "extension-methods"
+            },
+            {
+                text: "호출가능클래스",
+                link: "callable-classes"
+            }
+        ]
     }
 ]

@@ -62,10 +62,6 @@ export default navbar([
     icon: "mobile",
     children: [
       {
-        text: "Dart 언어 둘러보기",
-        link: "dart-tour/"
-      },
-      {
         text: "시작하기",
         link: "get-started/install/",
       }

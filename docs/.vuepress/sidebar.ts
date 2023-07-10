@@ -103,7 +103,6 @@ export default sidebar({
         ]
       }
   ],
-  "/flutter/dart-tour/": dartTour,
   "/python/dependency-injector/": dependencyInjector,
   "/python/boto3/": [
     {

@@ -14,7 +14,7 @@ Dart의 코어 라이브러리에 대해 배우려면 [라이브러리 둘러보
 
 ## 변수 {#variables}
 
-[형식이 안전](https://dart.dev/language/type-system)한 Dart 코드에서 대부분의 변수를 그들의 타입을 명시적으로 지정하지 않고 `var`를 사용하여 선언할 수 있습니다.
+[형식이 안전](type-system.md)한 Dart 코드에서 대부분의 변수를 그들의 타입을 명시적으로 지정하지 않고 `var`를 사용하여 선언할 수 있습니다.
 타입추론 덕에 변수의 타입은 초기 값에 의하여 결정됩니다.
 
 ```dart
@@ -162,7 +162,7 @@ var voyager3 = Spacecraft.unlaunched('Voyager III');
 voyager3.describe();
 ```
 
-초기화 목록, 선택적 `new`와 `const`, 생성자 리다이렉팅, `factory` 생성자, getter, setter 등등을 포함하여 Dart의 클래스에 대해 [더 읽어보세요](https://dart.dev/language/classes).
+초기화 목록, 선택적 `new`와 `const`, 생성자 리다이렉팅, `factory` 생성자, getter, setter 등등을 포함하여 Dart의 클래스에 대해 [더 읽어보세요](classes.md).
 
 ## 열거형 {#enums}
 
@@ -210,7 +210,7 @@ if (!yourPlanet.isGiant) {
 }
 ```
 
-향상된 Enum 요구사항 및 자동도입 속성, 열거값 이름에 접근, switch 명령문 지원 등등을 포함하여 Dart의 enum에 대해 [더 읽어보세요](https://dart.dev/language/enum).
+향상된 Enum 요구사항 및 자동도입 속성, 열거값 이름에 접근, switch 명령문 지원 등등을 포함하여 Dart의 enum에 대해 [더 읽어보세요](enum.md).
 
 ## 상속 {#inheritance}
 
@@ -224,7 +224,7 @@ class Orbiter extends Spacecraft {
 }
 ```
 
-클래스 확장, 선택적 `@override` 어노테이션 등 [더 읽어보세요](https://dart.dev/language/extend).
+클래스 확장, 선택적 `@override` 어노테이션 등 [더 읽어보세요](extend.md).
 
 ## Mixin {#mixins}
 
@@ -251,7 +251,7 @@ class PilotedCraft extends Spacecraft with Piloted {
 
 `PilotedCraft`는 이제 `astronauts` 필드와 `describeCrew()` 메소드를 가지게 됩니다.
 
-mixin에 대해 [더 읽어보세요](https://dart.dev/language/mixins).
+mixin에 대해 [더 읽어보세요](mixins.md).
 
 ## 인터페이스와 추상 클래스 {#interfaces-and-abstract-classes}
 
@@ -265,7 +265,7 @@ class MockSpaceship implements Spacecraft {
 }
 ```
 
-암묵적 인터페이스에 대해 [더 읽어보세요](https://dart.dev/language/classes#implicit-interfaces).
+암묵적 인터페이스에 대해 [더 읽어보세요](classes.md#implicit-interfaces).
 
 구성체 클래스에 의해 확장(또는 구현)되기 위한 추상 클래스를 만들 수 있습니다.
 추상 클래스는 추상 메소드(본문이 없는)를 포함합니다.
@@ -284,7 +284,7 @@ abstract class Describable {
 
 `Describable`를 확장한 어떤 클래스든 `describeWithEmphasis()` 메소드를 가지며 확장자의 `describe()` 구현을 호출하게 됩니다.
 
-추상 클래스와 메소드에 대해 [더 읽어보세요](https://dart.dev/language/classes#abstract-classes).
+추상 클래스와 메소드에 대해 [더 읽어보세요](classes.md#abstract-classes).
 
 ## 비동기 {#async}
 

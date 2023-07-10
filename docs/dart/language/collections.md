@@ -21,7 +21,7 @@ var list = [1, 2, 3];
 :::note
 Dart는 `list`를 `List<int>` 타입으로 추정합니다.
 이 리스트에 정수가 아닌 객체를 추가하면 분석기 또는 런타임에 오류가 발생하게 됩니다.
-자세한 정보는 [타입 추론](https://dart.dev/language/type-system#type-inference)을 참고하세요.
+자세한 정보는 [타입 추론](type-system.md#type-inference)을 참고하세요.
 :::
 
 {#trailing-comma}

@@ -11,7 +11,7 @@ tag:
 메타데이터 어노테이션은 `@` 문자로 시작하며 (`deprecated` 같은)컴파일타임 상수의 참조나 상수 생성자의 호출을 따릅니다.
 
 모든 Dart 코드에 세가지 어노테이션 사용이 가능합니다.(`@Deprecated`, `@deprecated`, `@override`)
-`@override`의 사용 예제로 [클래스 확장하기](https://dart.dev/language/extend)를 보시면 됩니다.
+`@override`의 사용 예제로 [클래스 확장하기](extend.md)를 보시면 됩니다.
 `@Deprecated` 어노테이션 사용예제는 다음과 같습니다.
 
 ```dart

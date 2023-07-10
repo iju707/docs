@@ -120,7 +120,7 @@ final 변수는 한번만 설정됩니다.
 const 변수는 컴파일타임 상수입니다. (const 변수는 암시적으로 final이 됩니다)
 
 :::note
-[인스턴스 변수](https://dart.dev/language/classes#instance-variables)는 `final`이 될 수 있으나 `const`는 불가능합니다.
+[인스턴스 변수](classes.md#instance-variables)는 `final`이 될 수 있으나 `const`는 불가능합니다.
 :::
 
 `final` 변수를 생성하고 설정하는 예제입니다.
@@ -186,6 +186,6 @@ const set = {if (list is List<int>) ...list}; // ...와 스프레드
 이와 대조되어 불변성을 가지기 떄문에 `const` 객체와 필드는 변경이 불가능합니다.
 :::
 
-상수값을 생성할 때 `const`를 사용하는 것에 대한 자세한 정보는 [리스트](collections.md#lists), [맵](collections.md#maps)이나 [클래스](https://dart.dev/language/classes)를 참고하세요.
+상수값을 생성할 때 `const`를 사용하는 것에 대한 자세한 정보는 [리스트](collections.md#lists), [맵](collections.md#maps)이나 [클래스](classes.md)를 참고하세요.
 
 <AdsenseB />

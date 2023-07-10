@@ -10,7 +10,7 @@ tag:
 Dart는 진정한 객체지향 언어이기에 함수 또한 객체이며 [`Funtion`](https://api.dart.dev/stable/dart-core/Function-class.html)이라는 타입을 가집니다.
 이 의미는 함수가 변수에 할당이 되거나 다른 함수에 인자로 전달될 수 있습니다.
 또한 Dart 클래스의 인스턴스를 함수처럼 호출할 수 있습니다.
-자세한 정보는 [호출가능한 클래스](https://dart.dev/language/callable-classes)를 참고하세요.
+자세한 정보는 [호출가능한 클래스](callable-classes.md)를 참고하세요.
 
 함수 구현체에 대한 예제입니다.
 
