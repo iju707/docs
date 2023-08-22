@@ -1,0 +1,1 @@
+import{_ as s,r as t,o,c as n,d as r}from"./app-95e21c4a.js";const c={};function a(l,_){const e=t("AdsenseB");return o(),n("div",null,[r(e)])}const m=s(c,[["render",a],["__file","ml-restart-failed-jobs.html.vue"]]);export{m as default};

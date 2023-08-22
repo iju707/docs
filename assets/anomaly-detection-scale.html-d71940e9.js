@@ -1,0 +1,1 @@
+import{_ as n,r as o,o as t,c,d as s}from"./app-95e21c4a.js";const a={};function l(r,_){const e=o("AdsenseB");return t(),c("div",null,[s(e)])}const d=n(a,[["render",l],["__file","anomaly-detection-scale.html.vue"]]);export{d as default};

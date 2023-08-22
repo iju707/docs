@@ -1,0 +1,1 @@
+import{_ as o,r as s,o as c,c as n,d as t}from"./app-95e21c4a.js";const r={};function _(a,l){const e=s("AdsenseB");return c(),n("div",null,[t(e)])}const d=o(r,[["render",_],["__file","chromeos.html.vue"]]);export{d as default};

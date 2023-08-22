@@ -1,0 +1,19 @@
+import{_ as s,r as c,o as l,c as r,a as e,b as o,d as i,e as a}from"./app-95e21c4a.js";const t={},m=e("p",null,[o("Docker CLI의 "),e("code",null,"compose"),o(" 명령은 "),e("code",null,"docker-compose"),o(" 명령 및 플래그의 대부분을 지원합니다."),e("br"),e("code",null,"docker-compose"),o("에서 사용하던 코드나 설정변경없이 사용가능할 것으로 예상됩니다.")],-1),p=e("code",null,"compose",-1),u={href:"https://github.com/docker/compose/issues",target:"_blank",rel:"noopener noreferrer"},v=a(`<h2 id="아직-구현안된-명령-및-플래그" tabindex="-1"><a class="header-anchor" href="#아직-구현안된-명령-및-플래그" aria-hidden="true">#</a> 아직 구현안된 명령 및 플래그</h2><p>아래의 명령어는 아직 구현이 되어있지 않으며, 추후 구현할 예정입니다.<br> 이러한 명령이 사용사례에서 더 높은 우선순위인지 알려주세요.</p><p><code>compose build --memory</code>: 이 옵션은 아직 buildkit에서 지원하지 않습니다. 플래그는 현재 지원하고 있지만 Compose 사용에 충돌되지 않도록 숨김처리되었습니다. 따라 플래그를 사용하더라도 별도 영향이 없습니다.</p><h2 id="구현되지-않을-플래그" tabindex="-1"><a class="header-anchor" href="#구현되지-않을-플래그" aria-hidden="true">#</a> 구현되지 않을 플래그</h2><p>아래의 목록에 포함된 플래그는 Docker CLI의 Compose에서 지원할 계획이 없습니다. 이미 <code>docker-compose</code>에서 비활성화 되었거나, Docker CLI의 Compose에 관련이 없기 때문입니다.</p><ul><li><code>compose ps --filter KEY-VALUE</code> : <code>service</code> 명령과의 복잡한 사용법으로 인해 관련이 없고 <code>docker-compose</code>에서도 제대로 문서화가 되어있지 않습니다.</li><li><code>compose rm --all</code> : docker-compose에서 비활성화 되었습니다.</li><li><code>compose scale</code> : docker-compose에서 비활성화 되었습니다. (<code>compose up --scale</code>를 대신 사용하세요)</li></ul><p>전역 플래그:</p><ul><li><code>--compatibility</code>는 Docker Compose V2에서 새롭게 정의되었습니다. 이제 이것의 의미는 V2에서 수행하는 명령을 V1에서 하는것과 동일하게 하는 것 입니다. <ul><li>한가지 다른점은 컨테이너 이름의 단어 구분자 입니다. V1에서 <code>_</code>로 사용하는 것을 V2에서는 호스트이름에 좀더 맞도록 <code>-</code>를 사용합니다.<br> 그래서 Docker Compose에서 <code>--compatibility</code>를 적용하면 <code>_</code>를 다시 사용합니다.<br> 따라서 한가지만 선택해서 잘 적용해야 됩니다. 그렇지 않으면 Docker Compose가 컨테이너를 서비스의 인스턴스로 인식하지 못할 수 있습니다. able to recognize the container as an instance of the service.</li></ul></li></ul><h2 id="config-명령" tabindex="-1"><a class="header-anchor" href="#config-명령" aria-hidden="true">#</a> Config 명령</h2><p>config 명령은 실제 프로젝트를 실행할 때 Docker Compose에서 사용할 설정을 보여주기 위한 것입니다.<br> 알다시피, Compose 파일의 일부는 짧거나 긴 포맷을 가지고 있습니다. 예로 <code>ports</code> 엔트리 같은 것 입니다.<br> 아래 예제에서 config 명령을 통해 <code>ports</code> 섹션을 확장해서 볼 수 있습니다.</p><p>docker-compose.yml:</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>services:
+  web:
+    image: nginx
+    ports:
+      - 80:80
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>$ docker compose config</code> 명령을 실행하면 다음과 같은 출력이 나옵니다.</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>services:
+  web:
+    image: nginx
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: 80
+      protocol: tcp
+networks:
+  default:
+    name: workspace_default
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>위 결과는 Docker Compose가 실행하는 프로젝트에서 사용되는 전체길이의 설정정보입니다.</p>`,15);function b(h,_){const n=c("ExternalLinkIcon"),d=c("AdsenseB");return l(),r("div",null,[m,e("p",null,[p,o("명령에서 사용이 불가능한 Compose 기능이 있다면, "),e("a",u,[o("Compose"),i(n)]),o(" 깃허브 리포지토리에 이슈를 생성해주시면 우선검토하도록 하겠습니다.")]),v,i(d)])}const f=s(t,[["render",b],["__file","cli-command-compatibility.html.vue"]]);export{f as default};
