@@ -107,5 +107,14 @@ export default [
                 link: "callable-classes"
             }
         ]
+    },
+    {
+        text: "동시성",
+        children: [
+            {
+                text: "비동기 지원",
+                link: "async"
+            }
+        ]
     }
 ]

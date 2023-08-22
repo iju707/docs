@@ -29,7 +29,7 @@ Dart의 모든 변수가 객체(클래스의 인스턴스)를 참조하기 때�
 
 * `Object` : `Null`을 제외한 Dart의 모든 클래스의 상위클래스
 * `Enum` : 모든 enum의 상위클래스
-* `Future`와 `Stream` : [비동기 지원](https://dart.dev/language/async)에서 사용
+* `Future`와 `Stream` : [비동기 지원](async.md)에서 사용
 * `Iterable` : [for-in 루프](https://dart.dev/guides/libraries/library-tour#iteration)나 동기적 [제너레이터 함수](functions.md#generators)에서 사용
 * `Never` : 표현식이 성공적인 평가를 완료할 수 없음을 나타냅니다. 항상 예외를 발생시키는 함수에서 자주 사용됩니다.
 * `dynamic` : 정적 확인을 비활성화하는 것을 가리킵니다. 보통 `Object`나 `Object?` 대신 사용합니다.

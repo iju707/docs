@@ -52,9 +52,7 @@ export default hopeTheme({
       imgLazyload: true,
       mark: true,
       mermaid: true,
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: ["highlight", "math", "search", "notes", "zoom"],
       sub: true,
       sup: true,
       tabs: true,

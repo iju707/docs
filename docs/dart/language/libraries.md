@@ -103,7 +103,7 @@ Future<void> greet() async {
 ```
 
 이전 코드에서 `await` 키워드는 라이브러리가 로딩될 때까지 실행을 일시정지시킵니다.
-`async`와 `await`에 대한 더 자세한 정보는 [비동기 지원](https://dart.dev/language/async)을 참고하세요.
+`async`와 `await`에 대한 더 자세한 정보는 [비동기 지원](async.md)을 참고하세요.
 
 라이브러리에 `loadLibrary()`를 여러번 실행해도 문제 없습니다.
 라이브러리는 딱 한번 로딩됩니다.

@@ -96,8 +96,60 @@ Future, `async`, `await`에 대한 상세한 소개는 [비동기 프로그래�
 String lookUpVersion() => '1.0.0';
 ```
 
+향후 구현된 내용이 시간소요가 많이되어 `async` 함수로 변경하고자 할 경우 반환값은 `Future`가 됩니다.
 
+```dart
+Future<String> lookUpVersion() async => '1.0.0';
+```
+
+참고할 것으로 함수의 본문이 Future API를 사용하지 않아도 됩니다.
+Dart는 필요시 Future 객체를 생성합니다.
+반환할만한 값이 없는 경우에는 `Future<void>`로 반환타입을 만들면 됩니다.
+
+Future, `async`와 `await`를 사용한 실습형 소개는 [비동기 프로그래밍 코드랩](https://dart.dev/codelabs/async-await)을 참고사헤요.
 
 ## 스트림 다루기 {#handling-streams}
+
+스트림에서 값을 가져오려면 두가지 방법이 있습니다.
+
+* `async`와 비동기 반복구 (`await for`)를 사용
+* [라이브러리 투어](https://dart.dev/guides/libraries/library-tour#stream)에서 소개하는 스트림 API 사용
+
+:::note
+`await for`를 사용하기 전에 코드가 명확한지, 스트림의 결과 모두를 기다리고자하는지 명확해야합니다.
+예로 들어, UI 프레임워크는 끊임없는 이벤트 스트림을 전달하기 때문에 `await for`를 UI 이벤트 수신자에서 사용하면 안됩니다.
+:::
+
+비동기 반복구는 아래와 같은 유형입니다.
+
+```dart
+await for (varOrType identifier in expression) {
+  // 스트림이 값을 내보낼 때마다 실행됩니다.
+}
+```
+
+`expression`의 값은 Stream 타입을 가져야 합니다.
+아래와 같이 실행됩니다.
+
+1. 스트림이 값을 내보낼 때까지 대기합니다.
+2. 내보내진 값을 변수에 설정하고 반복구의 본문을 실행합니다.
+3. 스트림이 종료될 때까지 1과 2를 반복합니다.
+
+스트림에서의 수신을 중단하려면 `break`나 `return` 상태문을 사용하여 반복구를 빠져나와서 스트림을 구독해지하는 것 입니다.
+
+**만약 비동기 반복구를 구현했을 때 컴파일타임 오류가 발생했다면, `await for`가 `async` 함수내 있는지 확인해보세요.**
+예로 들어, 비동기 반복구를 앱의 `main()` 함수에서 사용하려면 `main()`의 본문은 `async`로 표시되어야 합니다.
+
+```dart
+void main() async {
+  // ...
+  await for (final request in requestServer) {
+    handleRequest(request);
+  }
+  // ...
+}
+```
+
+비동기 프로그래밍에 더 자세한 정보는 라이브러리 투어의 [dart:async](https://dart.dev/guides/libraries/library-tour#dartasync---asynchronous-programming) 절을 참고하세요.
 
 <AdsenseB />

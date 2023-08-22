@@ -342,7 +342,7 @@ Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
 }
 ```
 
-`async` 함수 및 `Future`, `Stream`, 비동기 반복구 (`await for`) 등 비동기지원에 대해 [더 읽어보세요](https://dart.dev/language/async).
+`async` 함수 및 `Future`, `Stream`, 비동기 반복구 (`await for`) 등 비동기지원에 대해 [더 읽어보세요](async.md).
 
 ## 예외 {#exceptions}
 
